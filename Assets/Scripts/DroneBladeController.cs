@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class DroneBladeController : MonoBehaviour {
-	private float rotationsPerMinute =3000f;
+	private float rotationsPerMinute = 3000f;
 	
 	// Use this for initialization
 	void Start () {
@@ -11,6 +11,7 @@ public class DroneBladeController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate(0,6 * rotationsPerMinute * Time.deltaTime,0);
+		Vector3 verticalAxis = transform.TransformDirection(Vector3.up);
+		transform.RotateAround(gameObject.transform.position, verticalAxis, 6 * rotationsPerMinute * Time.deltaTime);
 	}
 }
