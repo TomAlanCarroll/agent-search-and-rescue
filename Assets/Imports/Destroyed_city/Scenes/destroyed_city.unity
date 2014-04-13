@@ -305,8 +305,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1084602}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -339,7 +339,7 @@ GameObject:
   - 64: {fileID: 4536371}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -591,6 +591,33 @@ Tree:
   m_PrefabInternal: {fileID: 1226176093}
   m_GameObject: {fileID: 12943111}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &16009495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 16009496}
+  m_Layer: 8
+  m_Name: Bip001 L UpperArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &16009496
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 16009495}
+  m_LocalRotation: {x: .208162889, y: -.471275449, z: .318960279, w: .795507371}
+  m_LocalPosition: {x: -4.85981941, y: 2.4414062e-06, z: 4.88281239e-06}
+  m_LocalScale: {x: 1.00000012, y: 1.00000024, z: 1}
+  m_Children:
+  - {fileID: 1195889198}
+  m_Father: {fileID: 891882399}
 --- !u!1 &17136773
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,8 +627,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 17136774}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -697,8 +724,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 20604358}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -896,7 +923,7 @@ GameObject:
   - 64: {fileID: 26264379}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -1306,33 +1333,6 @@ Transform:
   - {fileID: 583565682}
   - {fileID: 236440256}
   m_Father: {fileID: 1769982880}
---- !u!1 &50803054
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100064, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 50803055}
-  m_Layer: 0
-  m_Name: LeftInHandThumb
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &50803055
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400064, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 50803054}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -.0314596556, y: -.0100289918, z: .0400234982}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1132418614}
-  m_Father: {fileID: 1127253881}
 --- !u!1 &51385942
 GameObject:
   m_ObjectHideFlags: 0
@@ -1849,6 +1849,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 251756397}
@@ -1921,33 +1929,6 @@ Tree:
   m_PrefabInternal: {fileID: 191231116}
   m_GameObject: {fileID: 70919345}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &73187042
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100058, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 73187043}
-  m_Layer: 0
-  m_Name: LeftHandIndex2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &73187043
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400058, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 73187042}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -.0405780002, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1042100918}
-  m_Father: {fileID: 946999879}
 --- !u!1 &73720055
 GameObject:
   m_ObjectHideFlags: 0
@@ -2283,6 +2264,32 @@ Tree:
   m_PrefabInternal: {fileID: 191231116}
   m_GameObject: {fileID: 83610041}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &84867073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 84867074}
+  m_Layer: 8
+  m_Name: Bip001 L Finger2Nub
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &84867074
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 84867073}
+  m_LocalRotation: {x: 7.45057971e-09, y: -1.49011612e-08, z: 1.11022289e-16, w: 1}
+  m_LocalPosition: {x: -1.0796057, y: 6.10351549e-07, z: 0}
+  m_LocalScale: {x: 1, y: 1.00000012, z: 1.00000012}
+  m_Children: []
+  m_Father: {fileID: 2070689852}
 --- !u!1 &86160459
 GameObject:
   m_ObjectHideFlags: 0
@@ -2493,8 +2500,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 99759831}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -2905,6 +2912,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Buildings
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 1274600158}
@@ -2977,6 +2992,100 @@ Tree:
   m_PrefabInternal: {fileID: 1226176093}
   m_GameObject: {fileID: 112383406}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &112762726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 112762727}
+  - 137: {fileID: 112762728}
+  m_Layer: 8
+  m_Name: UACK2012_chr
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &112762727
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 112762726}
+  m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .0253999997, y: .0253999997, z: .0253999997}
+  m_Children: []
+  m_Father: {fileID: 1858722999}
+--- !u!137 &112762728
+SkinnedMeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13700000, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 112762726}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 53bed90a8c5c86e48a9c979db47bbbcf, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  serializedVersion: 2
+  m_Quality: 0
+  m_UpdateWhenOffscreen: 0
+  m_Mesh: {fileID: 4300000, guid: 2ee20597a7302ab45b11fed23e9a731e, type: 3}
+  m_Bones:
+  - {fileID: 2044273273}
+  - {fileID: 1933477252}
+  - {fileID: 1771023204}
+  - {fileID: 478632372}
+  - {fileID: 16009496}
+  - {fileID: 1638613432}
+  - {fileID: 1195889198}
+  - {fileID: 1233886074}
+  - {fileID: 923699318}
+  - {fileID: 1265471043}
+  - {fileID: 1075938868}
+  - {fileID: 971883472}
+  - {fileID: 2070689852}
+  - {fileID: 1254765522}
+  - {fileID: 596361767}
+  - {fileID: 2140664615}
+  - {fileID: 184927584}
+  - {fileID: 2049967118}
+  - {fileID: 1790175253}
+  - {fileID: 840179184}
+  - {fileID: 1325877124}
+  - {fileID: 1320626063}
+  - {fileID: 1045794548}
+  - {fileID: 1205064376}
+  - {fileID: 360003964}
+  - {fileID: 929785396}
+  - {fileID: 644870901}
+  - {fileID: 627507796}
+  - {fileID: 1223540607}
+  - {fileID: 1654710569}
+  - {fileID: 813625281}
+  - {fileID: 122201418}
+  - {fileID: 363158001}
+  - {fileID: 1770880189}
+  m_BlendShapeWeights: []
+  m_RootBone: {fileID: 1771023204}
+  m_AABB:
+    m_Center: {x: 2.35627556, y: 1.29176331, z: -1.49326897}
+    m_Extent: {x: 36.7086639, y: 30.7015038, z: 18.6699696}
+  m_DirtyAABB: 0
 --- !u!1 &119264021
 GameObject:
   m_ObjectHideFlags: 0
@@ -3124,7 +3233,7 @@ GameObject:
   - 64: {fileID: 121666032}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3197,7 +3306,7 @@ GameObject:
   - 64: {fileID: 121727032}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -3257,70 +3366,33 @@ MeshCollider:
   m_SmoothSphereCollisions: 0
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: e3c33f484ba1f9e4fb9e43d26361ed0a, type: 3}
---- !u!1001 &122688503
-Prefab:
+--- !u!1 &122201417
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400020, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 633.139099
-      objectReference: {fileID: 0}
-    - target: {fileID: 400020, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 14.5654087
-      objectReference: {fileID: 0}
-    - target: {fileID: 400020, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 387.397675
-      objectReference: {fileID: 0}
-    - target: {fileID: 400020, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400020, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400020, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400020, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11100000, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-      propertyPath: m_Animation
-      value: 
-      objectReference: {fileID: 7400010, guid: cc633396b5f95da4b916357a5508ee4f, type: 3}
-    - target: {fileID: 400020, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400020, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 400020, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 11100000, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-      propertyPath: m_CullingType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11100000, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-      propertyPath: m_AnimatePhysics
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_RootGameObject: {fileID: 316420867}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
+  m_PrefabParentObject: {fileID: 100006, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 122201418}
+  m_Layer: 8
+  m_Name: Bip001 R Finger21
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &122201418
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400006, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 122201417}
+  m_LocalRotation: {x: -5.95586969e-10, y: -1.66493557e-08, z: -.478903085, w: .877867818}
+  m_LocalPosition: {x: -1.39009213, y: 0, z: 0}
+  m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1}
+  m_Children:
+  - {fileID: 813625281}
+  m_Father: {fileID: 1654710569}
 --- !u!1 &123746064
 GameObject:
   m_ObjectHideFlags: 0
@@ -3771,8 +3843,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 130057221}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -4582,6 +4654,18 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: BuildingSkeleton
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 2121167237}
@@ -4950,6 +5034,14 @@ Prefab:
     - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -5570,8 +5662,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 179163064}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -5725,6 +5817,33 @@ Tree:
   m_PrefabInternal: {fileID: 246943691}
   m_GameObject: {fileID: 181211757}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &184927583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100008, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 184927584}
+  m_Layer: 8
+  m_Name: Bip001 R Thigh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &184927584
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400008, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 184927583}
+  m_LocalRotation: {x: -.586976588, y: .689648449, z: -.385892808, w: -.175870016}
+  m_LocalPosition: {x: 4.182302, y: .10436523, z: -4.15664339}
+  m_LocalScale: {x: 1, y: 1, z: .99999994}
+  m_Children:
+  - {fileID: 1790175253}
+  m_Father: {fileID: 2044273273}
 --- !u!1 &188464241
 GameObject:
   m_ObjectHideFlags: 0
@@ -5982,6 +6101,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 1439530770}
@@ -6130,8 +6257,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 192412431}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6790,33 +6917,6 @@ Tree:
   m_PrefabInternal: {fileID: 111916127}
   m_GameObject: {fileID: 201581699}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &203188256
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100022, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 203188257}
-  m_Layer: 0
-  m_Name: RightInHandThumb
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &203188257
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400022, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 203188256}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: .0317581184, y: -.0100289918, z: .0398196392}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 852189450}
-  m_Father: {fileID: 1589347034}
 --- !u!1 &203651247
 GameObject:
   m_ObjectHideFlags: 0
@@ -6893,8 +6993,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 203821604}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -6927,7 +7027,7 @@ GameObject:
   - 64: {fileID: 203988120}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7078,7 +7178,7 @@ GameObject:
   - 64: {fileID: 222553446}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7406,8 +7506,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 224799956}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -7427,33 +7527,6 @@ Transform:
   - {fileID: 981179839}
   - {fileID: 1517863341}
   m_Father: {fileID: 524626743}
---- !u!1 &224818964
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100068, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 224818965}
-  m_Layer: 0
-  m_Name: LeftForeArm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &224818965
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400068, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 224818964}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -.276870102, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1127253881}
-  m_Father: {fileID: 1256950150}
 --- !u!1 &225854996
 GameObject:
   m_ObjectHideFlags: 0
@@ -7649,97 +7722,6 @@ Tree:
   m_PrefabInternal: {fileID: 746385862}
   m_GameObject: {fileID: 227043067}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &230607473
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100024, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 230607474}
-  - 137: {fileID: 230607475}
-  m_Layer: 0
-  m_Name: soldier_Military_Male_Lod_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &230607474
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400024, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 230607473}
-  m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
-  m_LocalPosition: {x: 0, y: .892839253, z: .0543792509}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 316420868}
---- !u!137 &230607475
-SkinnedMeshRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 13700000, guid: 0329f9900cf52e1478b395083fa2a255,
-    type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 230607473}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: 4c6a7282d9e54dd47891208532875705, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_SortingLayerID: 0
-  serializedVersion: 2
-  m_Quality: 0
-  m_UpdateWhenOffscreen: 0
-  m_Mesh: {fileID: 4300000, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_Bones:
-  - {fileID: 943321889}
-  - {fileID: 1960665905}
-  - {fileID: 1289125587}
-  - {fileID: 518390977}
-  - {fileID: 1270771975}
-  - {fileID: 1682970381}
-  - {fileID: 1213063150}
-  - {fileID: 1684857288}
-  - {fileID: 861628086}
-  - {fileID: 743275283}
-  - {fileID: 1294617183}
-  - {fileID: 246652465}
-  - {fileID: 1217044267}
-  - {fileID: 1030176514}
-  - {fileID: 1994439272}
-  - {fileID: 1589347034}
-  - {fileID: 436445230}
-  - {fileID: 203188257}
-  - {fileID: 852189450}
-  - {fileID: 800258956}
-  - {fileID: 865010515}
-  - {fileID: 1144345884}
-  - {fileID: 1202572149}
-  - {fileID: 1064407164}
-  - {fileID: 1256950150}
-  - {fileID: 224818965}
-  - {fileID: 1127253881}
-  - {fileID: 946999879}
-  - {fileID: 50803055}
-  - {fileID: 1132418614}
-  - {fileID: 73187043}
-  m_BlendShapeWeights: []
-  m_RootBone: {fileID: 1960665905}
-  m_AABB:
-    m_Center: {x: 0, y: -.0731457472, z: -.00472456217}
-    m_Extent: {x: .965338171, y: .895106435, z: .188272655}
-  m_DirtyAABB: 0
 --- !u!1 &233602915
 GameObject:
   m_ObjectHideFlags: 0
@@ -8292,8 +8274,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 237726286}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8511,32 +8493,33 @@ Tree:
   m_PrefabInternal: {fileID: 776037350}
   m_GameObject: {fileID: 242778190}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &243781082
+--- !u!1 &244728887
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100014, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
+  m_PrefabParentObject: {fileID: 100010, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 243781083}
-  m_Layer: 0
-  m_Name: LeftFootToeBase_End
+  - 4: {fileID: 244728888}
+  m_Layer: 8
+  m_Name: Bip001 L Finger0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &243781083
+--- !u!4 &244728888
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400014, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 243781082}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: .00180875987, z: .10362336}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1202572149}
+  m_PrefabParentObject: {fileID: 400010, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 244728887}
+  m_LocalRotation: {x: .356171131, y: -.328560352, z: .221297428, w: .84629643}
+  m_LocalPosition: {x: -.900436997, y: .90591675, z: -1.43758297}
+  m_LocalScale: {x: .99999994, y: 1, z: 1.00000012}
+  m_Children:
+  - {fileID: 1265471043}
+  m_Father: {fileID: 1233886074}
 --- !u!1 &245530256
 GameObject:
   m_ObjectHideFlags: 0
@@ -8550,7 +8533,7 @@ GameObject:
   - 64: {fileID: 245530260}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -8791,38 +8774,19 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 1564434484}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &246652464
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100010, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 246652465}
-  m_Layer: 0
-  m_Name: Spine
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &246652465
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400010, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 246652464}
-  m_LocalRotation: {x: 2.18556941e-08, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.6469779e-25, y: .0922631845, z: .0157713313}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1294617183}
-  m_Father: {fileID: 1960665905}
 --- !u!1001 &246943691
 Prefab:
   m_ObjectHideFlags: 0
@@ -8946,6 +8910,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 1995212813}
@@ -9027,8 +8999,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 251756398}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9396,7 +9368,7 @@ GameObject:
   - 64: {fileID: 263628997}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -9893,7 +9865,7 @@ GameObject:
   - 64: {fileID: 284457388}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10102,8 +10074,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 286866051}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10486,6 +10458,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 1538039060}
@@ -10705,7 +10685,7 @@ GameObject:
   - 64: {fileID: 305509987}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -10905,50 +10885,6 @@ MeshCollider:
   m_SmoothSphereCollisions: 0
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 35822b9f61ef0b249bea5d4a893a22bb, type: 3}
---- !u!1 &316420867
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100020, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 316420868}
-  - 111: {fileID: 316420869}
-  m_Layer: 0
-  m_Name: soldier
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &316420868
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400020, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 316420867}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 633.139099, y: 14.5654087, z: 387.397675}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
-  m_Children:
-  - {fileID: 1960665905}
-  - {fileID: 230607474}
-  m_Father: {fileID: 0}
---- !u!111 &316420869
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11100000, guid: 0329f9900cf52e1478b395083fa2a255,
-    type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 316420867}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400010, guid: cc633396b5f95da4b916357a5508ee4f, type: 3}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 1
-  m_CullingType: 0
 --- !u!1 &317185482
 GameObject:
   m_ObjectHideFlags: 0
@@ -10958,8 +10894,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 317185483}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11059,7 +10995,7 @@ GameObject:
   - 64: {fileID: 324423330}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11132,7 +11068,7 @@ GameObject:
   - 64: {fileID: 328454734}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -11508,6 +11444,33 @@ Tree:
   m_PrefabInternal: {fileID: 1637558492}
   m_GameObject: {fileID: 332129521}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &334200878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100012, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 334200879}
+  m_Layer: 8
+  m_Name: Bip001 R Finger0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &334200879
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400012, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 334200878}
+  m_LocalRotation: {x: -.536669433, y: .259103507, z: -.0247008987, w: .802646339}
+  m_LocalPosition: {x: -.900436401, y: .905916095, z: 1.43758297}
+  m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000024}
+  m_Children:
+  - {fileID: 627507796}
+  m_Father: {fileID: 929785396}
 --- !u!1 &335968979
 GameObject:
   m_ObjectHideFlags: 0
@@ -12019,6 +11982,60 @@ Tree:
   m_PrefabInternal: {fileID: 1722747608}
   m_GameObject: {fileID: 357018087}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &360003963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100014, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 360003964}
+  m_Layer: 8
+  m_Name: Bip001 R Forearm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &360003964
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400014, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 360003963}
+  m_LocalRotation: {x: -1.39864769e-08, y: -2.0709388e-08, z: .490920156, w: .871204555}
+  m_LocalPosition: {x: -10.2386036, y: -1.52587882e-06, z: 0}
+  m_LocalScale: {x: 1, y: 1.00000012, z: 1.00000012}
+  m_Children:
+  - {fileID: 929785396}
+  m_Father: {fileID: 478632372}
+--- !u!1 &363158000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100016, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 363158001}
+  m_Layer: 8
+  m_Name: Bip001 R Finger11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &363158001
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400016, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 363158000}
+  m_LocalRotation: {x: -7.2871611e-09, y: 1.55191371e-09, z: -.208294317, w: .978066206}
+  m_LocalPosition: {x: -1.25117123, y: -6.10351549e-07, z: -2.4414062e-06}
+  m_LocalScale: {x: 1, y: .99999994, z: 1}
+  m_Children:
+  - {fileID: 1770880189}
+  m_Father: {fileID: 1223540607}
 --- !u!1 &368851300
 GameObject:
   m_ObjectHideFlags: 0
@@ -12275,6 +12292,14 @@ Prefab:
     - target: {fileID: 100006, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -12558,8 +12583,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 390637535}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13213,7 +13238,7 @@ GameObject:
   - 64: {fileID: 408621864}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13416,8 +13441,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 414899892}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13647,8 +13672,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 429500304}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13811,8 +13836,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 432111122}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -13899,33 +13924,6 @@ Tree:
   m_PrefabInternal: {fileID: 1717380782}
   m_GameObject: {fileID: 433839289}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &436445229
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100046, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 436445230}
-  m_Layer: 0
-  m_Name: RightHandIndex1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &436445230
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400046, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 436445229}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: .115738526, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 800258956}
-  m_Father: {fileID: 1589347034}
 --- !u!1 &440602465
 GameObject:
   m_ObjectHideFlags: 0
@@ -14609,7 +14607,7 @@ GameObject:
   - 64: {fileID: 448885475}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -14742,32 +14740,6 @@ MeshCollider:
   m_SmoothSphereCollisions: 0
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 35822b9f61ef0b249bea5d4a893a22bb, type: 3}
---- !u!1 &454359631
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100074, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 454359632}
-  m_Layer: 0
-  m_Name: HeadTop_End
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &454359632
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400074, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 454359631}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.17045827e-18, y: .178865969, z: .00123128889}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 943321889}
 --- !u!1 &456259881
 GameObject:
   m_ObjectHideFlags: 0
@@ -15045,8 +15017,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 465893287}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15079,7 +15051,7 @@ GameObject:
   - 64: {fileID: 466494194}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -15557,15 +15529,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 633.139099
+      value: 616.153748
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 15
+      value: 18.5035648
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 387.397705
+      value: 387.962799
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalRotation.x
@@ -15573,7 +15545,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalRotation.y
-      value: .615661502
+      value: .866025448
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalRotation.z
@@ -15581,7 +15553,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .788010776
+      value: .49999997
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: movement.gravity
@@ -15596,6 +15568,33 @@ Prefab:
   m_RootGameObject: {fileID: 1152066425}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &478632371
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100018, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 478632372}
+  m_Layer: 8
+  m_Name: Bip001 R UpperArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &478632372
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400018, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 478632371}
+  m_LocalRotation: {x: -.257656664, y: .288690388, z: .534403563, w: .751454413}
+  m_LocalPosition: {x: -4.85981798, y: 0, z: 0}
+  m_LocalScale: {x: .99999994, y: .99999994, z: .999999821}
+  m_Children:
+  - {fileID: 360003964}
+  m_Father: {fileID: 992148148}
 --- !u!1 &483071124
 GameObject:
   m_ObjectHideFlags: 0
@@ -15749,7 +15748,7 @@ GameObject:
   - 64: {fileID: 483629787}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16684,33 +16683,6 @@ Tree:
   m_PrefabInternal: {fileID: 562877189}
   m_GameObject: {fileID: 518100750}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &518390976
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100034, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 518390977}
-  m_Layer: 0
-  m_Name: RightUpLeg
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &518390977
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400034, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 518390976}
-  m_LocalRotation: {x: 2.18556941e-08, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: .0963378921, y: -.0327325426, z: -7.15255721e-09}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1270771975}
-  m_Father: {fileID: 1960665905}
 --- !u!1001 &519064490
 Prefab:
   m_ObjectHideFlags: 0
@@ -16760,8 +16732,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 520958342}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -16924,7 +16896,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 524626743}
   m_Layer: 0
-  m_Name: werky
+  m_Name: Buildings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16941,7 +16913,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 251756398}
-  - {fileID: 1274600159}
   - {fileID: 2121167238}
   - {fileID: 724622149}
   - {fileID: 1439530771}
@@ -16996,6 +16967,7 @@ Transform:
   - {fileID: 429500304}
   - {fileID: 803839604}
   - {fileID: 414899892}
+  - {fileID: 1274600159}
   m_Father: {fileID: 0}
 --- !u!1 &525020719
 GameObject:
@@ -17345,7 +17317,7 @@ GameObject:
   - 64: {fileID: 537038893}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -17818,6 +17790,32 @@ Tree:
   m_PrefabInternal: {fileID: 1638043237}
   m_GameObject: {fileID: 547972421}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &549853885
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100020, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 549853886}
+  m_Layer: 8
+  m_Name: Bip001 R Toe0Nub
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &549853886
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400020, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 549853885}
+  m_LocalRotation: {x: 0, y: -2.3568552e-15, z: -0, w: 1}
+  m_LocalPosition: {x: -5.16197491, y: 0, z: 3.05175774e-07}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1045794548}
 --- !u!1 &552171215
 GameObject:
   m_ObjectHideFlags: 0
@@ -18499,6 +18497,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 1486611101}
@@ -18626,6 +18632,14 @@ Prefab:
     - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -18913,7 +18927,7 @@ GameObject:
   - 64: {fileID: 573544745}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19245,7 +19259,7 @@ GameObject:
   - 64: {fileID: 580354093}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19521,8 +19535,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 592217970}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -19676,6 +19690,33 @@ Tree:
   m_PrefabInternal: {fileID: 1542287632}
   m_GameObject: {fileID: 595542839}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &596361766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100022, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 596361767}
+  m_Layer: 8
+  m_Name: Bip001 L Finger12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &596361767
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400022, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 596361766}
+  m_LocalRotation: {x: -3.98492572e-09, y: -1.4358446e-08, z: -.267423838, w: .963578999}
+  m_LocalPosition: {x: -1.01285279, y: 1.2207031e-06, z: 0}
+  m_LocalScale: {x: 1, y: 1.00000012, z: 1}
+  m_Children:
+  - {fileID: 2097239327}
+  m_Father: {fileID: 2140664615}
 --- !u!1 &600559939
 GameObject:
   m_ObjectHideFlags: 0
@@ -19867,7 +19908,7 @@ GameObject:
   - 64: {fileID: 613854934}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20074,7 +20115,7 @@ GameObject:
   - 64: {fileID: 620437218}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -20312,6 +20353,33 @@ Prefab:
   m_RootGameObject: {fileID: 1038313854}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &627507795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100024, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 627507796}
+  m_Layer: 8
+  m_Name: Bip001 R Finger01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &627507796
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400024, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 627507795}
+  m_LocalRotation: {x: 3.28526401e-10, y: 1.11710419e-08, z: -.0293960441, w: .999567866}
+  m_LocalPosition: {x: -1.16822505, y: -2.4414062e-06, z: -1.2207031e-06}
+  m_LocalScale: {x: .99999994, y: 1.00000012, z: 1}
+  m_Children:
+  - {fileID: 644870901}
+  m_Father: {fileID: 334200879}
 --- !u!1 &629613488
 GameObject:
   m_ObjectHideFlags: 0
@@ -20915,6 +20983,33 @@ Tree:
   m_PrefabInternal: {fileID: 776037350}
   m_GameObject: {fileID: 644539129}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &644870900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100026, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 644870901}
+  m_Layer: 8
+  m_Name: Bip001 R Finger02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &644870901
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400026, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 644870900}
+  m_LocalRotation: {x: 2.76758403e-08, y: -1.33318299e-08, z: -.202522531, w: .979277611}
+  m_LocalPosition: {x: -1.46028316, y: 0, z: 1.2207031e-06}
+  m_LocalScale: {x: 1, y: .999999821, z: 1}
+  m_Children:
+  - {fileID: 849194642}
+  m_Father: {fileID: 627507796}
 --- !u!1 &645935361
 GameObject:
   m_ObjectHideFlags: 0
@@ -21030,8 +21125,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 648999766}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -21247,6 +21342,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 224799955}
@@ -21265,7 +21368,7 @@ GameObject:
   - 64: {fileID: 652128431}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -21472,7 +21575,7 @@ GameObject:
   - 64: {fileID: 655908513}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -21852,7 +21955,7 @@ GameObject:
   - 64: {fileID: 667258050}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -22481,6 +22584,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 432111121}
@@ -22495,8 +22606,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 678027734}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -23190,7 +23301,7 @@ GameObject:
   - 64: {fileID: 699010524}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -23421,6 +23532,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 1606501560}
@@ -23616,11 +23735,48 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 1996341632}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &707069998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100028, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 707069999}
+  m_Layer: 8
+  m_Name: Bip001 Neck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &707069999
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400028, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 707069998}
+  m_LocalRotation: {x: 0, y: 0, z: -1.49011612e-08, w: 1}
+  m_LocalPosition: {x: -10.3731146, y: .338332504, z: 6.10351549e-07}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1638613432}
+  - {fileID: 891882399}
+  - {fileID: 992148148}
+  m_Father: {fileID: 1933477252}
 --- !u!1 &709581712
 GameObject:
   m_ObjectHideFlags: 0
@@ -23874,7 +24030,7 @@ GameObject:
   - 64: {fileID: 715844274}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -24191,6 +24347,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 997204682}
@@ -24272,8 +24436,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 724622149}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -24580,8 +24744,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 739232511}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -24645,33 +24809,6 @@ Prefab:
   m_RootGameObject: {fileID: 234130261}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &743275282
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100054, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 743275283}
-  m_Layer: 0
-  m_Name: RightArm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &743275283
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400054, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 743275282}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: .123231195, y: -.0111297602, z: -.0179345701}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1994439272}
-  m_Father: {fileID: 861628086}
 --- !u!1001 &746385862
 Prefab:
   m_ObjectHideFlags: 0
@@ -24794,6 +24931,14 @@ Prefab:
     - target: {fileID: 100006, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -25456,6 +25601,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 130057220}
@@ -25666,7 +25819,7 @@ GameObject:
   - 64: {fileID: 766141767}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -25982,6 +26135,14 @@ Prefab:
     - target: {fileID: 100006, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -26493,33 +26654,6 @@ Tree:
   m_PrefabInternal: {fileID: 746385862}
   m_GameObject: {fileID: 797801574}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &800258955
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100044, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 800258956}
-  m_Layer: 0
-  m_Name: RightHandIndex2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &800258956
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400044, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 800258955}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: .0405780002, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 879587941}
-  m_Father: {fileID: 436445230}
 --- !u!1 &803839603
 GameObject:
   m_ObjectHideFlags: 0
@@ -26529,8 +26663,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 803839604}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -26563,7 +26697,7 @@ GameObject:
   - 64: {fileID: 803928215}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -26703,7 +26837,7 @@ GameObject:
   - 64: {fileID: 806011994}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -26763,6 +26897,32 @@ MeshCollider:
   m_SmoothSphereCollisions: 0
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: e3c33f484ba1f9e4fb9e43d26361ed0a, type: 3}
+--- !u!1 &808406423
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100030, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 808406424}
+  m_Layer: 8
+  m_Name: Bip001 R Finger1Nub
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &808406424
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400030, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 808406423}
+  m_LocalRotation: {x: -3.72529074e-09, y: -6.9388939e-18, z: 1, w: -1.86264504e-09}
+  m_LocalPosition: {x: -.834113777, y: -6.10351549e-07, z: 0}
+  m_LocalScale: {x: -.99999994, y: -.99999994, z: -.999999881}
+  m_Children: []
+  m_Father: {fileID: 1770880189}
 --- !u!1 &811219608
 GameObject:
   m_ObjectHideFlags: 0
@@ -26830,6 +26990,33 @@ Tree:
   m_PrefabInternal: {fileID: 1226176093}
   m_GameObject: {fileID: 811219608}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &813625280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100032, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 813625281}
+  m_Layer: 8
+  m_Name: Bip001 R Finger22
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &813625281
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400032, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 813625280}
+  m_LocalRotation: {x: -1.3179287e-08, y: 6.95348801e-09, z: -.466640681, w: .884446979}
+  m_LocalPosition: {x: -.995655477, y: 0, z: 0}
+  m_LocalScale: {x: .999999881, y: 1, z: .99999994}
+  m_Children:
+  - {fileID: 1893833915}
+  m_Father: {fileID: 122201418}
 --- !u!1001 &821288087
 Prefab:
   m_ObjectHideFlags: 0
@@ -26952,6 +27139,14 @@ Prefab:
     - target: {fileID: 100006, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -27328,6 +27523,33 @@ Prefab:
   m_RootGameObject: {fileID: 1650897075}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &840179183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100034, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 840179184}
+  m_Layer: 8
+  m_Name: Bip001 L Calf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &840179184
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400034, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 840179183}
+  m_LocalRotation: {x: -1.82900484e-09, y: 5.59903635e-09, z: .595177829, w: .803594053}
+  m_LocalPosition: {x: -18.6916199, y: -1.52587887e-07, z: 3.05175774e-07}
+  m_LocalScale: {x: 1, y: 1.00000012, z: 1}
+  m_Children:
+  - {fileID: 1320626063}
+  m_Father: {fileID: 2049967118}
 --- !u!1 &841669663
 GameObject:
   m_ObjectHideFlags: 0
@@ -27462,6 +27684,32 @@ Tree:
   m_PrefabInternal: {fileID: 821288087}
   m_GameObject: {fileID: 844646121}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &849194641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100036, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 849194642}
+  m_Layer: 8
+  m_Name: Bip001 R Finger0Nub
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &849194642
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400036, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 849194641}
+  m_LocalRotation: {x: 7.45058149e-09, y: -4.56216504e-25, z: 1, w: 6.12323426e-17}
+  m_LocalPosition: {x: -1.1682266, y: 0, z: -1.2207031e-06}
+  m_LocalScale: {x: -.99999994, y: -1, z: -.999999881}
+  m_Children: []
+  m_Father: {fileID: 644870901}
 --- !u!1 &851812399
 GameObject:
   m_ObjectHideFlags: 0
@@ -27596,33 +27844,6 @@ Tree:
   m_PrefabInternal: {fileID: 722859876}
   m_GameObject: {fileID: 852015098}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &852189449
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100048, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 852189450}
-  m_Layer: 0
-  m_Name: RightHandThumb1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &852189450
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400048, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 852189449}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: .0429379269, y: -.0100190733, z: .0212318413}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1071498729}
-  m_Father: {fileID: 203188257}
 --- !u!1 &853334058
 GameObject:
   m_ObjectHideFlags: 0
@@ -28081,33 +28302,6 @@ Tree:
   m_PrefabInternal: {fileID: 1900083253}
   m_GameObject: {fileID: 860774975}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &861628085
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100056, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 861628086}
-  m_Layer: 0
-  m_Name: RightShoulder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &861628086
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400056, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 861628085}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: .0614019744, y: .101870112, z: -.0379324332}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 743275283}
-  m_Father: {fileID: 1684857288}
 --- !u!1 &864237923
 GameObject:
   m_ObjectHideFlags: 0
@@ -28166,33 +28360,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1637558492}
   m_GameObject: {fileID: 864237923}
   m_Mesh: {fileID: 4300000, guid: bf587c110cca37f40b346c9ff28fce29, type: 3}
---- !u!1 &865010514
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100040, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 865010515}
-  m_Layer: 0
-  m_Name: LeftLeg
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &865010515
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400040, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 865010514}
-  m_LocalRotation: {x: .00872653443, y: 0, z: -0, w: .999961913}
-  m_LocalPosition: {x: -0, y: -.417299986, z: -.0172996521}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1144345884}
-  m_Father: {fileID: 1289125587}
 --- !u!1 &871796431
 GameObject:
   m_ObjectHideFlags: 0
@@ -28206,7 +28373,7 @@ GameObject:
   - 64: {fileID: 871796435}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -28467,32 +28634,6 @@ Tree:
   m_PrefabInternal: {fileID: 776037350}
   m_GameObject: {fileID: 878653341}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &879587940
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100018, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 879587941}
-  m_Layer: 0
-  m_Name: RightHandIndex3_End
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &879587941
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400018, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 879587940}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: .0404309072, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 800258956}
 --- !u!1 &879914004
 GameObject:
   m_ObjectHideFlags: 0
@@ -28694,32 +28835,33 @@ Tree:
   m_PrefabInternal: {fileID: 821288087}
   m_GameObject: {fileID: 883952490}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &892382096
+--- !u!1 &891882398
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100030, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
+  m_PrefabParentObject: {fileID: 100038, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 892382097}
-  m_Layer: 0
-  m_Name: LeftHandThumb2_End
+  - 4: {fileID: 891882399}
+  m_Layer: 8
+  m_Name: Bip001 L Clavicle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &892382097
+--- !u!4 &891882399
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400030, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 892382096}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -.0373620614, y: -.0201370232, z: .0172610469}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1132418614}
+  m_PrefabParentObject: {fileID: 400038, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 891882398}
+  m_LocalRotation: {x: -.660171151, y: -.000263871363, z: .751115084, w: -.000298133906}
+  m_LocalPosition: {x: 1.4912256, y: -.977548778, z: 3.20623827}
+  m_LocalScale: {x: 1, y: .99999994, z: .999999881}
+  m_Children:
+  - {fileID: 16009496}
+  m_Father: {fileID: 707069999}
 --- !u!1 &892980440
 GameObject:
   m_ObjectHideFlags: 0
@@ -29783,6 +29925,33 @@ Transform:
   - {fileID: 827824644}
   - {fileID: 162541575}
   m_Father: {fileID: 1439530771}
+--- !u!1 &923699317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100040, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 923699318}
+  m_Layer: 8
+  m_Name: Bip001 L Finger02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &923699318
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400040, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 923699317}
+  m_LocalRotation: {x: -2.15506257e-09, y: 1.47445043e-08, z: .144623771, w: .989486754}
+  m_LocalPosition: {x: -1.46028316, y: -1.83105465e-06, z: 0}
+  m_LocalScale: {x: .999999821, y: .99999994, z: 1}
+  m_Children:
+  - {fileID: 1141552027}
+  m_Father: {fileID: 1265471043}
 --- !u!1 &925126305
 GameObject:
   m_ObjectHideFlags: 0
@@ -29841,6 +30010,36 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1610388168}
   m_GameObject: {fileID: 925126305}
   m_Mesh: {fileID: 4300000, guid: bf587c110cca37f40b346c9ff28fce29, type: 3}
+--- !u!1 &929785395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100042, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 929785396}
+  m_Layer: 8
+  m_Name: Bip001 R Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &929785396
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400042, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 929785395}
+  m_LocalRotation: {x: .836742342, y: .0213184915, z: .098882854, w: .538172781}
+  m_LocalPosition: {x: -11.2149696, y: -2.4414062e-06, z: 0}
+  m_LocalScale: {x: 1, y: 1.00000024, z: 1.00000012}
+  m_Children:
+  - {fileID: 334200879}
+  - {fileID: 1223540607}
+  - {fileID: 1654710569}
+  - {fileID: 1739986790}
+  m_Father: {fileID: 360003964}
 --- !u!1 &930907823
 GameObject:
   m_ObjectHideFlags: 0
@@ -30109,33 +30308,6 @@ Tree:
   m_PrefabInternal: {fileID: 145034453}
   m_GameObject: {fileID: 931792947}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &943321888
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 943321889}
-  m_Layer: 0
-  m_Name: Head
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &943321889
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 943321888}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.05879116e-24, y: .0402661115, z: .0085852053}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 454359632}
-  m_Father: {fileID: 1030176514}
 --- !u!1 &944693723
 GameObject:
   m_ObjectHideFlags: 0
@@ -30337,33 +30509,6 @@ Tree:
   m_PrefabInternal: {fileID: 650695675}
   m_GameObject: {fileID: 946121745}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &946999878
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100060, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 946999879}
-  m_Layer: 0
-  m_Name: LeftHandIndex1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &946999879
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400060, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 946999878}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -.115738526, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 73187043}
-  m_Father: {fileID: 1127253881}
 --- !u!1 &947325738
 GameObject:
   m_ObjectHideFlags: 0
@@ -31096,6 +31241,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 1755997090}
@@ -31576,6 +31729,33 @@ Tree:
   m_PrefabInternal: {fileID: 1722747608}
   m_GameObject: {fileID: 971639329}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &971883471
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100044, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 971883472}
+  m_Layer: 8
+  m_Name: Bip001 L Finger2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &971883472
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400044, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 971883471}
+  m_LocalRotation: {x: -.00878649857, y: -.0416541621, z: -.337968677, w: .94019407}
+  m_LocalPosition: {x: -4.07280636, y: .212846681, z: .242563471}
+  m_LocalScale: {x: .99999994, y: .999999881, z: 1}
+  m_Children:
+  - {fileID: 1254765522}
+  m_Father: {fileID: 1233886074}
 --- !u!1 &972349747
 GameObject:
   m_ObjectHideFlags: 0
@@ -32042,6 +32222,32 @@ Tree:
   m_PrefabInternal: {fileID: 1542287632}
   m_GameObject: {fileID: 981957978}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &987450249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100046, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 987450250}
+  m_Layer: 8
+  m_Name: Bip001 Footsteps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &987450250
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400046, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 987450249}
+  m_LocalRotation: {x: -.0184343178, y: .0395326018, z: -.422215402, w: .905445457}
+  m_LocalPosition: {x: -2.74183774, y: 2.28881831e-07, z: -31.3393555}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1931554471}
 --- !u!1 &987524629
 GameObject:
   m_ObjectHideFlags: 0
@@ -32281,6 +32487,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 1526681769}
@@ -32408,6 +32622,14 @@ Prefab:
     - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -32650,6 +32872,33 @@ Tree:
   m_PrefabInternal: {fileID: 705864462}
   m_GameObject: {fileID: 991460481}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &992148147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100048, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 992148148}
+  m_Layer: 8
+  m_Name: Bip001 R Clavicle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &992148148
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400048, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 992148147}
+  m_LocalRotation: {x: .660171211, y: .000261890498, z: .751115084, w: -.000300033309}
+  m_LocalPosition: {x: 1.4912256, y: -.977529287, z: -3.20624328}
+  m_LocalScale: {x: 1, y: .99999994, z: 1}
+  m_Children:
+  - {fileID: 478632372}
+  m_Father: {fileID: 707069999}
 --- !u!1 &992702106
 GameObject:
   m_ObjectHideFlags: 0
@@ -33073,8 +33322,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 997204683}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33609,7 +33858,7 @@ GameObject:
   - 64: {fileID: 1004273009}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -33911,7 +34160,7 @@ GameObject:
   - 64: {fileID: 1009343559}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -34496,33 +34745,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1474218371}
   m_GameObject: {fileID: 1027795455}
   m_Mesh: {fileID: 4300000, guid: bf587c110cca37f40b346c9ff28fce29, type: 3}
---- !u!1 &1030176513
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100002, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1030176514}
-  m_Layer: 0
-  m_Name: Neck1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1030176514
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400002, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 1030176513}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: .043400269, z: .0092689516}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 943321889}
-  m_Father: {fileID: 1217044267}
 --- !u!1 &1032195933
 GameObject:
   m_ObjectHideFlags: 0
@@ -34605,8 +34827,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1033045530}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -34916,32 +35138,6 @@ Tree:
   m_PrefabInternal: {fileID: 566120816}
   m_GameObject: {fileID: 1040854421}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &1042100917
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100028, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1042100918}
-  m_Layer: 0
-  m_Name: LeftHandIndex3_End
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1042100918
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400028, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 1042100917}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -.0404309072, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 73187043}
 --- !u!1 &1043460120
 GameObject:
   m_ObjectHideFlags: 0
@@ -35076,6 +35272,33 @@ Tree:
   m_PrefabInternal: {fileID: 1193321698}
   m_GameObject: {fileID: 1045265915}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &1045794547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100050, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1045794548}
+  m_Layer: 8
+  m_Name: Bip001 R Toe0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1045794548
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400050, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1045794547}
+  m_LocalRotation: {x: -.015425452, y: -.0154254027, z: -.706938863, w: .706938148}
+  m_LocalPosition: {x: -4.29907131, y: 4.87505341, z: 0}
+  m_LocalScale: {x: 1.00000012, y: 1, z: 1.00000012}
+  m_Children:
+  - {fileID: 549853886}
+  m_Father: {fileID: 1325877124}
 --- !u!1 &1045887883
 GameObject:
   m_ObjectHideFlags: 0
@@ -35804,33 +36027,6 @@ Tree:
   m_PrefabInternal: {fileID: 246943691}
   m_GameObject: {fileID: 1063643402}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &1064407163
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100072, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1064407164}
-  m_Layer: 0
-  m_Name: LeftShoulder
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1064407164
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400072, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 1064407163}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -.0614422597, y: .101870112, z: -.0379324332}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1256950150}
-  m_Father: {fileID: 1684857288}
 --- !u!1 &1067460083
 GameObject:
   m_ObjectHideFlags: 0
@@ -36021,6 +36217,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 1198791372}
@@ -36133,32 +36337,33 @@ Prefab:
   m_RootGameObject: {fileID: 900239109}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &1071498728
+--- !u!1 &1075938867
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100016, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
+  m_PrefabParentObject: {fileID: 100052, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1071498729}
-  m_Layer: 0
-  m_Name: RightHandThumb2_End
+  - 4: {fileID: 1075938868}
+  m_Layer: 8
+  m_Name: Bip001 L Finger1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1071498729
+--- !u!4 &1075938868
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400016, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 1071498728}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: .0374240093, y: -.0201370232, z: .0170292668}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 852189450}
+  m_PrefabParentObject: {fileID: 400052, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1075938867}
+  m_LocalRotation: {x: .0165251493, y: -.0454542562, z: -.348965555, w: .935886681}
+  m_LocalPosition: {x: -4.13407326, y: .0594885238, z: -1.40015864}
+  m_LocalScale: {x: .99999994, y: .99999994, z: .99999994}
+  m_Children:
+  - {fileID: 2140664615}
+  m_Father: {fileID: 1233886074}
 --- !u!1 &1075970286
 GameObject:
   m_ObjectHideFlags: 0
@@ -37258,6 +37463,50 @@ Tree:
   m_PrefabInternal: {fileID: 776037350}
   m_GameObject: {fileID: 1109385346}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1001 &1113022142
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400086, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 633.130554
+      objectReference: {fileID: 0}
+    - target: {fileID: 400086, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 14.7319984
+      objectReference: {fileID: 0}
+    - target: {fileID: 400086, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 386.520874
+      objectReference: {fileID: 0}
+    - target: {fileID: 400086, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400086, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400086, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400086, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100086, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+      propertyPath: m_Name
+      value: Soldier
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_RootGameObject: {fileID: 1858722998}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1113515390
 GameObject:
   m_ObjectHideFlags: 0
@@ -37481,34 +37730,6 @@ Tree:
   m_PrefabInternal: {fileID: 145034453}
   m_GameObject: {fileID: 1123797039}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &1127253880
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100066, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1127253881}
-  m_Layer: 0
-  m_Name: LeftHand
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1127253881
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400066, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 1127253880}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -.278737783, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 946999879}
-  - {fileID: 50803055}
-  m_Father: {fileID: 224818965}
 --- !u!1 &1127988847
 GameObject:
   m_ObjectHideFlags: 0
@@ -37917,33 +38138,6 @@ Tree:
   m_PrefabInternal: {fileID: 1474218371}
   m_GameObject: {fileID: 1130847117}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &1132418613
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100062, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1132418614}
-  m_Layer: 0
-  m_Name: LeftHandThumb1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1132418614
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400062, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 1132418613}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -.0432983376, y: -.0100289918, z: .020796204}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 892382097}
-  m_Father: {fileID: 50803055}
 --- !u!1 &1133935718
 GameObject:
   m_ObjectHideFlags: 0
@@ -38257,6 +38451,32 @@ Tree:
   m_PrefabInternal: {fileID: 2080542044}
   m_GameObject: {fileID: 1141167694}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &1141552026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100054, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1141552027}
+  m_Layer: 8
+  m_Name: Bip001 L Finger0Nub
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1141552027
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400054, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1141552026}
+  m_LocalRotation: {x: 7.4505806e-09, y: -6.93889457e-17, z: -9.31322663e-09, w: 1}
+  m_LocalPosition: {x: -1.16822505, y: 0, z: 2.4414062e-06}
+  m_LocalScale: {x: .99999994, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 923699318}
 --- !u!1 &1144048301
 GameObject:
   m_ObjectHideFlags: 0
@@ -38324,33 +38544,6 @@ Tree:
   m_PrefabInternal: {fileID: 676700728}
   m_GameObject: {fileID: 1144048301}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &1144345883
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100038, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1144345884}
-  m_Layer: 0
-  m_Name: LeftFoot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1144345884
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400038, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 1144345883}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -.000126047133, y: -.391899973, z: -.00847686734}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1202572149}
-  m_Father: {fileID: 865010515}
 --- !u!1 &1145237930
 GameObject:
   m_ObjectHideFlags: 0
@@ -38577,8 +38770,8 @@ Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
   m_PrefabInternal: {fileID: 478142711}
   m_GameObject: {fileID: 1152066425}
-  m_LocalRotation: {x: 0, y: .615661502, z: 0, w: .788010776}
-  m_LocalPosition: {x: 633.139099, y: 15, z: 387.397705}
+  m_LocalRotation: {x: 0, y: .866025448, z: 0, w: .49999997}
+  m_LocalPosition: {x: 616.153748, y: 18.5035648, z: 387.962799}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1105861919}
@@ -38833,7 +39026,7 @@ GameObject:
   - 64: {fileID: 1153859305}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -39283,6 +39476,14 @@ Prefab:
     - target: {fileID: 100006, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -39895,7 +40096,7 @@ GameObject:
   - 64: {fileID: 1169142784}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -40278,6 +40479,14 @@ Prefab:
     - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -41323,6 +41532,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 1831849212}
@@ -41386,6 +41603,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 960314540}
   m_GameObject: {fileID: 1194750084}
   m_Mesh: {fileID: 4300000, guid: bf587c110cca37f40b346c9ff28fce29, type: 3}
+--- !u!1 &1195889197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100056, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1195889198}
+  m_Layer: 8
+  m_Name: Bip001 L Forearm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1195889198
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400056, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1195889197}
+  m_LocalRotation: {x: -5.54318591e-09, y: 2.28994494e-08, z: .530549288, w: .847654164}
+  m_LocalPosition: {x: -10.2386007, y: 2.4414062e-06, z: 1.2207031e-06}
+  m_LocalScale: {x: .999999881, y: .99999994, z: 1}
+  m_Children:
+  - {fileID: 1233886074}
+  m_Father: {fileID: 16009496}
 --- !u!1 &1196161225
 GameObject:
   m_ObjectHideFlags: 0
@@ -41399,7 +41643,7 @@ GameObject:
   - 64: {fileID: 1196161229}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -41582,6 +41826,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 1736486210}
@@ -41596,8 +41848,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1198791373}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -41684,33 +41936,33 @@ Tree:
   m_PrefabInternal: {fileID: 1638043237}
   m_GameObject: {fileID: 1202256030}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &1202572148
+--- !u!1 &1205064375
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100036, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
+  m_PrefabParentObject: {fileID: 100058, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1202572149}
-  m_Layer: 0
-  m_Name: LeftToeBase
+  - 4: {fileID: 1205064376}
+  m_Layer: 8
+  m_Name: Bip001 L Toe0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1202572149
+--- !u!4 &1205064376
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400036, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 1202572148}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: .00183286658, y: -.120640054, z: .0828226358}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_PrefabParentObject: {fileID: 400058, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1205064375}
+  m_LocalRotation: {x: -.0265758745, y: .0265757646, z: -.841066837, w: .539623976}
+  m_LocalPosition: {x: -4.29907084, y: 4.87505484, z: -6.10351549e-07}
+  m_LocalScale: {x: 1, y: 1, z: .99999994}
   m_Children:
-  - {fileID: 243781083}
-  m_Father: {fileID: 1144345884}
+  - {fileID: 1726822672}
+  m_Father: {fileID: 1320626063}
 --- !u!1 &1205242996
 GameObject:
   m_ObjectHideFlags: 0
@@ -42001,33 +42253,6 @@ Tree:
   m_PrefabInternal: {fileID: 776037350}
   m_GameObject: {fileID: 1211745968}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &1213063149
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100076, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1213063150}
-  m_Layer: 0
-  m_Name: RightToeBase
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1213063150
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400076, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 1213063149}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: .00183309556, y: -.120640054, z: .0828226358}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2075646307}
-  m_Father: {fileID: 1682970381}
 --- !u!1 &1214819870
 GameObject:
   m_ObjectHideFlags: 0
@@ -42153,33 +42378,6 @@ Tree:
   m_PrefabInternal: {fileID: 1993534411}
   m_GameObject: {fileID: 1216537975}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &1217044266
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100004, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1217044267}
-  m_Layer: 0
-  m_Name: Neck
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1217044267
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400004, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 1217044266}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: .13877441, z: -.0435418673}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1030176514}
-  m_Father: {fileID: 1684857288}
 --- !u!1 &1217976914
 GameObject:
   m_ObjectHideFlags: 0
@@ -42305,6 +42503,33 @@ Tree:
   m_PrefabInternal: {fileID: 70724049}
   m_GameObject: {fileID: 1223105881}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &1223540606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100060, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1223540607}
+  m_Layer: 8
+  m_Name: Bip001 R Finger1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1223540607
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400060, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1223540606}
+  m_LocalRotation: {x: -.00419765245, y: .0481824614, z: -.0948496312, w: .994316041}
+  m_LocalPosition: {x: -4.13407278, y: .0594873019, z: 1.40015376}
+  m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
+  m_Children:
+  - {fileID: 363158001}
+  m_Father: {fileID: 929785396}
 --- !u!1 &1225197492
 GameObject:
   m_ObjectHideFlags: 0
@@ -42483,6 +42708,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 317185482}
@@ -42613,6 +42846,35 @@ Tree:
   m_PrefabInternal: {fileID: 703470211}
   m_GameObject: {fileID: 1231957693}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &1233886073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100062, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1233886074}
+  m_Layer: 8
+  m_Name: Bip001 L Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1233886074
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400062, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1233886073}
+  m_LocalRotation: {x: .962013423, y: .0514551252, z: -.165503353, w: -.210929364}
+  m_LocalPosition: {x: -11.2149706, y: 0, z: -1.2207031e-06}
+  m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1}
+  m_Children:
+  - {fileID: 244728888}
+  - {fileID: 1075938868}
+  - {fileID: 971883472}
+  m_Father: {fileID: 1195889198}
 --- !u!1001 &1236829303
 Prefab:
   m_ObjectHideFlags: 0
@@ -42735,6 +42997,14 @@ Prefab:
     - target: {fileID: 100006, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -43467,38 +43737,46 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 2102793117}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &1256950149
+--- !u!1 &1254765521
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100070, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
+  m_PrefabParentObject: {fileID: 100064, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1256950150}
-  m_Layer: 0
-  m_Name: LeftArm
+  - 4: {fileID: 1254765522}
+  m_Layer: 8
+  m_Name: Bip001 L Finger21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1256950150
+--- !u!4 &1254765522
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400070, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 1256950149}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -.123190917, y: -.0111297602, z: -.0179345701}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_PrefabParentObject: {fileID: 400064, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1254765521}
+  m_LocalRotation: {x: .058427237, y: -.0157507993, z: -.259810865, w: .963761628}
+  m_LocalPosition: {x: -1.39009154, y: 0, z: -2.4414062e-06}
+  m_LocalScale: {x: .99999994, y: .99999994, z: .99999994}
   m_Children:
-  - {fileID: 224818965}
-  m_Father: {fileID: 1064407164}
+  - {fileID: 2070689852}
+  m_Father: {fileID: 971883472}
 --- !u!1 &1259867856
 GameObject:
   m_ObjectHideFlags: 0
@@ -43714,6 +43992,33 @@ MonoBehaviour:
   m_RefractLayers:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!1 &1265471042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100066, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1265471043}
+  m_Layer: 8
+  m_Name: Bip001 L Finger01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1265471043
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400066, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1265471042}
+  m_LocalRotation: {x: 1.70892651e-08, y: -2.07268389e-08, z: .101325288, w: .994853377}
+  m_LocalPosition: {x: -1.16822755, y: 1.2207031e-06, z: 0}
+  m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
+  m_Children:
+  - {fileID: 923699318}
+  m_Father: {fileID: 244728888}
 --- !u!1 &1265920824
 GameObject:
   m_ObjectHideFlags: 0
@@ -43994,33 +44299,6 @@ Tree:
   m_PrefabInternal: {fileID: 70724049}
   m_GameObject: {fileID: 1270707426}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &1270771974
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100032, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1270771975}
-  m_Layer: 0
-  m_Name: RightLeg
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1270771975
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400032, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 1270771974}
-  m_LocalRotation: {x: .00872653443, y: 0, z: -0, w: .999961913}
-  m_LocalPosition: {x: -0, y: -.417299986, z: -.0172996521}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1682970381}
-  m_Father: {fileID: 518390977}
 --- !u!1 &1272277004
 GameObject:
   m_ObjectHideFlags: 0
@@ -44107,7 +44385,7 @@ GameObject:
   - 64: {fileID: 1274314626}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -44176,8 +44454,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1274600159}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Buildings
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -44992,33 +45270,6 @@ Prefab:
   m_RootGameObject: {fileID: 1209150716}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &1289125586
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100042, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1289125587}
-  m_Layer: 0
-  m_Name: LeftUpLeg
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1289125587
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400042, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 1289125586}
-  m_LocalRotation: {x: 2.18556941e-08, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -.0963378921, y: -.0327325426, z: -7.15255721e-09}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 865010515}
-  m_Father: {fileID: 1960665905}
 --- !u!1 &1290611719
 GameObject:
   m_ObjectHideFlags: 0
@@ -45153,33 +45404,6 @@ Tree:
   m_PrefabInternal: {fileID: 989568646}
   m_GameObject: {fileID: 1292219729}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &1294617182
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100008, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1294617183}
-  m_Layer: 0
-  m_Name: Spine1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1294617183
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400008, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 1294617182}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: .162540287, z: -.00165605545}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1684857288}
-  m_Father: {fileID: 246652465}
 --- !u!1 &1301051900
 GameObject:
   m_ObjectHideFlags: 0
@@ -45450,8 +45674,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1309911368}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -45551,7 +45775,7 @@ GameObject:
   - 64: {fileID: 1311801776}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -45797,7 +46021,7 @@ GameObject:
   - 64: {fileID: 1319011967}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -45857,6 +46081,33 @@ MeshCollider:
   m_SmoothSphereCollisions: 0
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: e3c33f484ba1f9e4fb9e43d26361ed0a, type: 3}
+--- !u!1 &1320626062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100068, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1320626063}
+  m_Layer: 8
+  m_Name: Bip001 L Foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1320626063
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400068, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1320626062}
+  m_LocalRotation: {x: -.014641433, y: -.0141755585, z: -.348415554, w: .937118649}
+  m_LocalPosition: {x: -18.6916237, y: -1.2207031e-06, z: -3.05175774e-07}
+  m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1}
+  m_Children:
+  - {fileID: 1205064376}
+  m_Father: {fileID: 840179184}
 --- !u!1 &1321687612
 GameObject:
   m_ObjectHideFlags: 0
@@ -45982,6 +46233,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 2145136502}
   m_GameObject: {fileID: 1324116129}
   m_Mesh: {fileID: 4300000, guid: bf587c110cca37f40b346c9ff28fce29, type: 3}
+--- !u!1 &1325877123
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100070, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1325877124}
+  m_Layer: 8
+  m_Name: Bip001 R Foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1325877124
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400070, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1325877123}
+  m_LocalRotation: {x: .0491652191, y: -.00458261743, z: -.0580491796, w: .99709183}
+  m_LocalPosition: {x: -18.6916237, y: 2.4414062e-06, z: 0}
+  m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
+  m_Children:
+  - {fileID: 1045794548}
+  m_Father: {fileID: 1790175253}
 --- !u!1 &1330699547
 GameObject:
   m_ObjectHideFlags: 0
@@ -46570,6 +46848,14 @@ Prefab:
     - target: {fileID: 100006, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -47781,6 +48067,14 @@ Prefab:
     - target: {fileID: 100006, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -49276,8 +49570,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1427489383}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -49543,8 +49837,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1439530771}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -50826,6 +51120,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 2002217034}
@@ -51041,8 +51343,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1484165547}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -51138,8 +51440,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1486611102}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -51172,7 +51474,7 @@ GameObject:
   - 64: {fileID: 1488560495}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -51354,6 +51656,14 @@ Prefab:
     - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -51754,6 +52064,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 192412430}
@@ -51960,8 +52278,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1503350188}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -52350,6 +52668,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 648999765}
@@ -52368,7 +52694,7 @@ GameObject:
   - 64: {fileID: 1518709548}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -52566,7 +52892,7 @@ GameObject:
   - 64: {fileID: 1523782936}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -52741,8 +53067,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1526681770}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -53385,8 +53711,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1538039061}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -53640,6 +53966,14 @@ Prefab:
     - target: {fileID: 100006, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -53969,6 +54303,14 @@ Prefab:
     - target: {fileID: 100006, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -54403,8 +54745,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1564434485}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -54634,8 +54976,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1570198998}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -54934,6 +55276,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 1861860265}
@@ -55129,6 +55479,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 1484165546}
@@ -55201,34 +55559,6 @@ Tree:
   m_PrefabInternal: {fileID: 1196947634}
   m_GameObject: {fileID: 1587558040}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &1589347033
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100050, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1589347034}
-  m_Layer: 0
-  m_Name: RightHand
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1589347034
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400050, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 1589347033}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: .278737783, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 436445230}
-  - {fileID: 203188257}
-  m_Father: {fileID: 1994439272}
 --- !u!1 &1590898908
 GameObject:
   m_ObjectHideFlags: 0
@@ -55640,8 +55970,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1596085704}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -55843,8 +56173,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1606501561}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -56011,7 +56341,7 @@ GameObject:
   - 64: {fileID: 1609848247}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -56260,6 +56590,14 @@ Prefab:
     - target: {fileID: 100006, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -56925,6 +57263,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 465893286}
@@ -57010,7 +57356,7 @@ GameObject:
   - 64: {fileID: 1626892895}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -57247,6 +57593,14 @@ Prefab:
     - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -57510,6 +57864,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 1961906766}
@@ -57638,11 +58000,46 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 520958341}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1638613431
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100072, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1638613432}
+  m_Layer: 8
+  m_Name: Bip001 Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1638613432
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400072, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1638613431}
+  m_LocalRotation: {x: -.554055274, y: -.0557478406, z: .0626072809, w: .828248322}
+  m_LocalPosition: {x: -2.80374503, y: -1.2207031e-06, z: 6.10351549e-07}
+  m_LocalScale: {x: 1.00000012, y: 1, z: 1.00000012}
+  m_Children:
+  - {fileID: 1910341271}
+  m_Father: {fileID: 707069999}
 --- !u!1 &1638840030
 GameObject:
   m_ObjectHideFlags: 0
@@ -57786,8 +58183,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1640583158}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -58165,6 +58562,33 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!1 &1654710568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100074, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1654710569}
+  m_Layer: 8
+  m_Name: Bip001 R Finger2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1654710569
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400074, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1654710568}
+  m_LocalRotation: {x: .0764234215, y: .0173096098, z: -.748004317, w: .659051955}
+  m_LocalPosition: {x: -4.07280731, y: .21284546, z: -.242568359}
+  m_LocalScale: {x: 1, y: .999999881, z: 1.00000012}
+  m_Children:
+  - {fileID: 122201418}
+  m_Father: {fileID: 929785396}
 --- !u!1 &1658245584
 GameObject:
   m_ObjectHideFlags: 0
@@ -59031,7 +59455,7 @@ GameObject:
   - 64: {fileID: 1671532258}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -59104,7 +59528,7 @@ GameObject:
   - 64: {fileID: 1672179911}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -59499,62 +59923,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!1 &1682970380
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100078, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1682970381}
-  m_Layer: 0
-  m_Name: RightFoot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1682970381
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400078, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 1682970380}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -.00012606621, y: -.391899973, z: -.00847686734}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1213063150}
-  m_Father: {fileID: 1270771975}
---- !u!1 &1684857287
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100006, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1684857288}
-  m_Layer: 0
-  m_Name: Spine2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1684857288
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400006, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 1684857287}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: .136396483, z: -.0129230497}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1064407164}
-  - {fileID: 1217044267}
-  - {fileID: 861628086}
-  m_Father: {fileID: 1294617183}
 --- !u!1 &1686743008
 GameObject:
   m_ObjectHideFlags: 0
@@ -59780,7 +60148,7 @@ GameObject:
   - 64: {fileID: 1705506023}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -60270,6 +60638,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 1427489382}
@@ -60398,6 +60774,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 390637534}
@@ -60515,6 +60899,32 @@ MeshCollider:
   m_SmoothSphereCollisions: 0
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 35822b9f61ef0b249bea5d4a893a22bb, type: 3}
+--- !u!1 &1726822671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100076, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1726822672}
+  m_Layer: 8
+  m_Name: Bip001 L Toe0Nub
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1726822672
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400076, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1726822671}
+  m_LocalRotation: {x: -2.30829247e-15, y: 1.41342146e-31, z: 1, w: 6.12323426e-17}
+  m_LocalPosition: {x: -5.16197109, y: 0, z: 0}
+  m_LocalScale: {x: -1, y: -1, z: -1}
+  m_Children: []
+  m_Father: {fileID: 1205064376}
 --- !u!1 &1728002174
 GameObject:
   m_ObjectHideFlags: 0
@@ -61033,8 +61443,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1736486211}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -61054,6 +61464,64 @@ Transform:
   - {fileID: 495819785}
   - {fileID: 285752685}
   m_Father: {fileID: 524626743}
+--- !u!1 &1739986789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100078, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1739986790}
+  - 33: {fileID: 1739986792}
+  - 23: {fileID: 1739986791}
+  m_Layer: 8
+  m_Name: UACK2012_gun
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1739986790
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400078, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1739986789}
+  m_LocalRotation: {x: -.447997183, y: .578330398, z: -.47770077, w: .486450881}
+  m_LocalPosition: {x: -3.14617372, y: .898021817, z: 1.18259513}
+  m_LocalScale: {x: .999999881, y: .99999994, z: .99999994}
+  m_Children: []
+  m_Father: {fileID: 929785396}
+--- !u!23 &1739986791
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1739986789}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 575c8865affaf334b9b0b8a1380da0cb, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
+--- !u!33 &1739986792
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1739986789}
+  m_Mesh: {fileID: 4300002, guid: 2ee20597a7302ab45b11fed23e9a731e, type: 3}
 --- !u!1 &1744185008
 GameObject:
   m_ObjectHideFlags: 0
@@ -61264,8 +61732,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1755997091}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -62061,8 +62529,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1769982880}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -62082,6 +62550,60 @@ Transform:
   - {fileID: 1662304375}
   - {fileID: 1725142678}
   m_Father: {fileID: 524626743}
+--- !u!1 &1770880188
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100080, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1770880189}
+  m_Layer: 8
+  m_Name: Bip001 R Finger12
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1770880189
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400080, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1770880188}
+  m_LocalRotation: {x: 0, y: 0, z: -.430684805, w: .902502418}
+  m_LocalPosition: {x: -1.01285219, y: -1.83105465e-06, z: -2.4414062e-06}
+  m_LocalScale: {x: 1, y: .99999994, z: 1}
+  m_Children:
+  - {fileID: 808406424}
+  m_Father: {fileID: 363158001}
+--- !u!1 &1771023203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100082, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1771023204}
+  m_Layer: 8
+  m_Name: Bip001 Pelvis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1771023204
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400082, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1771023203}
+  m_LocalRotation: {x: -.499999642, y: .500000358, z: .499999642, w: .500000358}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2044273273}
+  m_Father: {fileID: 1931554471}
 --- !u!1001 &1771692021
 Prefab:
   m_ObjectHideFlags: 0
@@ -62204,6 +62726,14 @@ Prefab:
     - target: {fileID: 100006, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -63130,6 +63660,33 @@ Tree:
   m_PrefabInternal: {fileID: 746385862}
   m_GameObject: {fileID: 1789958453}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &1790175252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100084, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1790175253}
+  m_Layer: 8
+  m_Name: Bip001 R Calf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1790175253
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400084, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1790175252}
+  m_LocalRotation: {x: 3.07810026e-08, y: 2.53157229e-08, z: .540616632, w: .841269076}
+  m_LocalPosition: {x: -18.6916199, y: 0, z: 9.15527323e-07}
+  m_LocalScale: {x: .999999881, y: 1.00000012, z: 1}
+  m_Children:
+  - {fileID: 1325877124}
+  m_Father: {fileID: 184927584}
 --- !u!1 &1792031719
 GameObject:
   m_ObjectHideFlags: 0
@@ -63934,6 +64491,14 @@ Prefab:
     - target: {fileID: 100006, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -65006,8 +65571,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1831849213}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -65366,7 +65931,7 @@ GameObject:
   - 64: {fileID: 1842095308}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -65880,8 +66445,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1858600968}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -65901,6 +66466,104 @@ Transform:
   - {fileID: 1075970287}
   - {fileID: 1272277005}
   m_Father: {fileID: 524626743}
+--- !u!1 &1858722998
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100086, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1858722999}
+  - 111: {fileID: 1858723002}
+  - 114: {fileID: 1858723001}
+  - 143: {fileID: 1858723000}
+  m_Layer: 8
+  m_Name: Soldier
+  m_TagString: Friendly
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1858722999
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400086, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1858722998}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 633.130554, y: 14.7319984, z: 386.520874}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children:
+  - {fileID: 1931554471}
+  - {fileID: 112762727}
+  m_Father: {fileID: 0}
+--- !u!143 &1858723000
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 14300000, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1858722998}
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: .5
+  m_SlopeLimit: 45
+  m_StepOffset: .300000012
+  m_SkinWidth: .0799999982
+  m_MinMoveDistance: 0
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1858723001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1858722998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea84e13941b9cf489896a2f3886c6d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim:
+    walk: {fileID: 7400000, guid: 2ee20597a7302ab45b11fed23e9a731e, type: 3}
+    stand_Lshot: {fileID: 7400000, guid: f6d65830102588d4f938acfca9853bc4, type: 3}
+    stand_Rshot: {fileID: 7400000, guid: 3e1d1f055e031c74eb16ecf0bab362dc, type: 3}
+    seat_Lshot: {fileID: 7400000, guid: 5cbf31f01dabae04ba03d45fda9f78e9, type: 3}
+    seat_Fshot: {fileID: 7400000, guid: 2b00cb1971fc51e4490360565acccf52, type: 3}
+    stand_Fshot: {fileID: 7400000, guid: dcb4744d830d8d442860cc1bc5213ce6, type: 3}
+    idle: {fileID: 7400000, guid: 3ae45526f372fce4a9ef3dd1f3a42f1d, type: 3}
+    hit: {fileID: 7400000, guid: bd5f6458056f4464f8b16193d655f3e0, type: 3}
+    death: {fileID: 7400000, guid: 5d9ef47ccef0d7d41bdf8fd2a0f63b69, type: 3}
+    run: {fileID: 7400000, guid: 6f6012c98e2cc594187ca87a0ff9232a, type: 3}
+  aniBody: {fileID: 1858723002}
+  state: 0
+  destination: {x: 0, y: 0, z: 0}
+  controller: {fileID: 1858723000}
+--- !u!111 &1858723002
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11100000, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1858722998}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 3ae45526f372fce4a9ef3dd1f3a42f1d, type: 3}
+  m_Animations:
+  - {fileID: 7400000, guid: 2ee20597a7302ab45b11fed23e9a731e, type: 3}
+  - {fileID: 7400000, guid: f6d65830102588d4f938acfca9853bc4, type: 3}
+  - {fileID: 7400000, guid: 3e1d1f055e031c74eb16ecf0bab362dc, type: 3}
+  - {fileID: 7400000, guid: 5cbf31f01dabae04ba03d45fda9f78e9, type: 3}
+  - {fileID: 7400000, guid: 2b00cb1971fc51e4490360565acccf52, type: 3}
+  - {fileID: 7400000, guid: dcb4744d830d8d442860cc1bc5213ce6, type: 3}
+  - {fileID: 7400000, guid: 3ae45526f372fce4a9ef3dd1f3a42f1d, type: 3}
+  - {fileID: 7400000, guid: bd5f6458056f4464f8b16193d655f3e0, type: 3}
+  - {fileID: 7400000, guid: 5d9ef47ccef0d7d41bdf8fd2a0f63b69, type: 3}
+  - {fileID: 7400000, guid: 6f6012c98e2cc594187ca87a0ff9232a, type: 3}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 1
 --- !u!1 &1861860265
 GameObject:
   m_ObjectHideFlags: 0
@@ -65910,8 +66573,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1861860266}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -66883,6 +67546,32 @@ Tree:
   m_PrefabInternal: {fileID: 1196947634}
   m_GameObject: {fileID: 1892394623}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &1893833914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100088, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1893833915}
+  m_Layer: 8
+  m_Name: Bip001 R Finger2Nub
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1893833915
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400088, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1893833914}
+  m_LocalRotation: {x: 7.45057971e-09, y: 1.49011612e-08, z: 1, w: 1.11758691e-08}
+  m_LocalPosition: {x: -1.07960451, y: 1.2207031e-06, z: 0}
+  m_LocalScale: {x: -1.00000012, y: -1, z: -1.00000012}
+  m_Children: []
+  m_Father: {fileID: 813625281}
 --- !u!1 &1897831672
 GameObject:
   m_ObjectHideFlags: 0
@@ -67073,6 +67762,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 203821603}
@@ -67158,7 +67855,7 @@ GameObject:
   - 64: {fileID: 1909178847}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -67285,6 +67982,32 @@ Tree:
   m_PrefabInternal: {fileID: 1542287632}
   m_GameObject: {fileID: 1910206974}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &1910341270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100090, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1910341271}
+  m_Layer: 8
+  m_Name: Bip001 HeadNub
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1910341271
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400090, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1910341270}
+  m_LocalRotation: {x: 1.86264515e-09, y: -7.45058149e-09, z: 1.38777895e-17, w: 1}
+  m_LocalPosition: {x: -8.78506374, y: 0, z: 0}
+  m_LocalScale: {x: .99999994, y: 1, z: .99999994}
+  m_Children: []
+  m_Father: {fileID: 1638613432}
 --- !u!1001 &1916860156
 Prefab:
   m_ObjectHideFlags: 0
@@ -67407,6 +68130,14 @@ Prefab:
     - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -67671,7 +68402,7 @@ GameObject:
   - 64: {fileID: 1925498877}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -67744,7 +68475,7 @@ GameObject:
   - 64: {fileID: 1926924476}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -68084,6 +68815,34 @@ MeshCollider:
   m_SmoothSphereCollisions: 0
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 35822b9f61ef0b249bea5d4a893a22bb, type: 3}
+--- !u!1 &1931554470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100092, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1931554471}
+  m_Layer: 8
+  m_Name: Bip001
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1931554471
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400092, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1931554470}
+  m_LocalRotation: {x: -.62721163, y: .270597637, z: .326505184, w: .653281629}
+  m_LocalPosition: {x: 6.46926623e-10, y: .828071177, z: -.0147999553}
+  m_LocalScale: {x: .0254000016, y: .0253999997, z: .0253999997}
+  m_Children:
+  - {fileID: 987450250}
+  - {fileID: 1771023204}
+  m_Father: {fileID: 1858722999}
 --- !u!1 &1933122149
 GameObject:
   m_ObjectHideFlags: 0
@@ -68151,6 +68910,33 @@ Tree:
   m_PrefabInternal: {fileID: 1574890173}
   m_GameObject: {fileID: 1933122149}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &1933477251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100094, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1933477252}
+  m_Layer: 8
+  m_Name: Bip001 Spine1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1933477252
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400094, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 1933477251}
+  m_LocalRotation: {x: .125855714, y: -.0205874909, z: -.0672948584, w: .989549339}
+  m_LocalPosition: {x: -8.74882793, y: -.00668212865, z: -.00175506587}
+  m_LocalScale: {x: .99999994, y: .99999994, z: 1}
+  m_Children:
+  - {fileID: 707069999}
+  m_Father: {fileID: 2044273273}
 --- !u!1 &1935180410
 GameObject:
   m_ObjectHideFlags: 0
@@ -68918,35 +69704,6 @@ Tree:
   m_PrefabInternal: {fileID: 1375143600}
   m_GameObject: {fileID: 1958330078}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &1960665904
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100012, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1960665905}
-  m_Layer: 0
-  m_Name: Hips
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1960665905
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400012, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 1960665904}
-  m_LocalRotation: {x: 0, y: -0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.72340422e-18, y: .963793993, z: .0398552492}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1289125587}
-  - {fileID: 518390977}
-  - {fileID: 246652465}
-  m_Father: {fileID: 316420868}
 --- !u!1 &1961270576
 GameObject:
   m_ObjectHideFlags: 0
@@ -69023,8 +69780,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1961906767}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -70005,38 +70762,19 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 99759830}
   m_IsPrefabParent: 0
   m_IsExploded: 1
---- !u!1 &1994439271
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100052, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1994439272}
-  m_Layer: 0
-  m_Name: RightForeArm
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1994439272
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400052, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 1994439271}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: .276870102, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1589347034}
-  m_Father: {fileID: 743275283}
 --- !u!1 &1995212813
 GameObject:
   m_ObjectHideFlags: 0
@@ -70046,8 +70784,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1995212814}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -70076,8 +70814,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1996341633}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -70279,8 +71017,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2002217035}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -70453,7 +71191,7 @@ GameObject:
   - 64: {fileID: 2007463932}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -72081,11 +72819,48 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 429500303}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &2044273272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100096, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2044273273}
+  m_Layer: 8
+  m_Name: Bip001 Spine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2044273273
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400096, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 2044273272}
+  m_LocalRotation: {x: .127147093, y: -.0124093834, z: -.134118721, w: .982696176}
+  m_LocalPosition: {x: -4.30088377, y: -.00648925779, z: -.00175907137}
+  m_LocalScale: {x: 1, y: 1.00000012, z: 1}
+  m_Children:
+  - {fileID: 2049967118}
+  - {fileID: 184927584}
+  - {fileID: 1933477252}
+  m_Father: {fileID: 1771023204}
 --- !u!1 &2045455990
 GameObject:
   m_ObjectHideFlags: 0
@@ -72293,6 +73068,33 @@ Tree:
   m_PrefabInternal: {fileID: 1172048801}
   m_GameObject: {fileID: 2049492214}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &2049967117
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100098, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2049967118}
+  m_Layer: 8
+  m_Name: Bip001 L Thigh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2049967118
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400098, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 2049967117}
+  m_LocalRotation: {x: -.243342727, y: .917285562, z: -.315015733, w: .011686828}
+  m_LocalPosition: {x: 4.10386229, y: 2.14886475, z: 3.65368462}
+  m_LocalScale: {x: .999999881, y: .999999881, z: .999999881}
+  m_Children:
+  - {fileID: 840179184}
+  m_Father: {fileID: 2044273273}
 --- !u!1 &2050881224
 GameObject:
   m_ObjectHideFlags: 0
@@ -72479,7 +73281,7 @@ GameObject:
   - 64: {fileID: 2052283285}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -72954,6 +73756,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1622983287}
   m_GameObject: {fileID: 2070159629}
   m_Mesh: {fileID: 4300000, guid: bf587c110cca37f40b346c9ff28fce29, type: 3}
+--- !u!1 &2070689851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100100, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2070689852}
+  m_Layer: 8
+  m_Name: Bip001 L Finger22
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2070689852
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400100, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 2070689851}
+  m_LocalRotation: {x: .058640793, y: -.0149362301, z: -.246374607, w: .967283726}
+  m_LocalPosition: {x: -.995654285, y: -2.4414062e-06, z: 2.4414062e-06}
+  m_LocalScale: {x: 1.00000012, y: 1.00000012, z: 1}
+  m_Children:
+  - {fileID: 84867074}
+  m_Father: {fileID: 1254765522}
 --- !u!1 &2074596380
 GameObject:
   m_ObjectHideFlags: 0
@@ -73021,32 +73850,6 @@ Tree:
   m_PrefabInternal: {fileID: 1638043237}
   m_GameObject: {fileID: 2074596380}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
---- !u!1 &2075646306
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100026, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2075646307}
-  m_Layer: 0
-  m_Name: RightFootToeBase_End
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2075646307
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400026, guid: 0329f9900cf52e1478b395083fa2a255, type: 3}
-  m_PrefabInternal: {fileID: 122688503}
-  m_GameObject: {fileID: 2075646306}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.19480896e-05, y: .00180875987, z: .10362336}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1213063150}
 --- !u!1 &2076878690
 GameObject:
   m_ObjectHideFlags: 0
@@ -73200,7 +74003,7 @@ GameObject:
   - 64: {fileID: 2079297925}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -73383,6 +74186,14 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_RootGameObject: {fileID: 803839603}
@@ -73531,8 +74342,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2085473827}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -73705,7 +74516,7 @@ GameObject:
   - 64: {fileID: 2091152450}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -73774,8 +74585,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2092015060}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -74063,6 +74874,32 @@ Tree:
   m_PrefabInternal: {fileID: 1172048801}
   m_GameObject: {fileID: 2096186959}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &2097239326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100102, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2097239327}
+  m_Layer: 8
+  m_Name: Bip001 L Finger1Nub
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2097239327
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400102, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 2097239326}
+  m_LocalRotation: {x: -1.49011612e-08, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: -.834111333, y: 0, z: -2.4414062e-06}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 596361767}
 --- !u!1 &2099085972
 GameObject:
   m_ObjectHideFlags: 0
@@ -74474,8 +75311,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2102793118}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -75180,8 +76017,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2121167238}
   m_Layer: 0
-  m_Name: wrak_budova
-  m_TagString: Untagged
+  m_Name: Building
+  m_TagString: Building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -75437,7 +76274,7 @@ GameObject:
   - 64: {fileID: 2129766875}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -75574,6 +76411,7 @@ GameObject:
   - 4: {fileID: 2131007670}
   - 114: {fileID: 2131007672}
   - 154: {fileID: 2131007671}
+  - 114: {fileID: 2131007673}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -75628,6 +76466,19 @@ MonoBehaviour:
   m_LightmapSize: 2048
   m_DrawTreesAndFoliage: 1
   m_MaterialTemplate: {fileID: 0}
+--- !u!114 &2131007673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2131007669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13610a4c79a45046bf2aa98575f3a80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  friendlySoldierPrefab: {fileID: 100086, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee,
+    type: 2}
 --- !u!1 &2131846022
 GameObject:
   m_ObjectHideFlags: 0
@@ -75641,7 +76492,7 @@ GameObject:
   - 64: {fileID: 2131846026}
   m_Layer: 0
   m_Name: bet_skelet
-  m_TagString: Untagged
+  m_TagString: BuildingSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -75835,6 +76686,33 @@ Tree:
   m_PrefabInternal: {fileID: 2080542044}
   m_GameObject: {fileID: 2140357359}
   m_TreeData: {fileID: 11400000, guid: 08170dd4d8d521f49a99199199f35808, type: 2}
+--- !u!1 &2140664614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100104, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2140664615}
+  m_Layer: 8
+  m_Name: Bip001 L Finger11
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2140664615
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400104, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee, type: 2}
+  m_PrefabInternal: {fileID: 1113022142}
+  m_GameObject: {fileID: 2140664614}
+  m_LocalRotation: {x: 0, y: 0, z: -.292745709, w: .956190348}
+  m_LocalPosition: {x: -1.25116944, y: 0, z: -2.4414062e-06}
+  m_LocalScale: {x: 1, y: 1, z: .99999994}
+  m_Children:
+  - {fileID: 596361767}
+  m_Father: {fileID: 1075938868}
 --- !u!1 &2141683636
 GameObject:
   m_ObjectHideFlags: 0
@@ -76051,6 +76929,14 @@ Prefab:
     - target: {fileID: 100006, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
+      propertyPath: m_Name
+      value: Building
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}

@@ -3,6 +3,10 @@
 --- !u!78 &1
 TagManager:
   tags:
+  - Friendly
+  - Enemy
+  - Building
+  - BuildingSkeleton
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

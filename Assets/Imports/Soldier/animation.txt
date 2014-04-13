@@ -1,0 +1,10 @@
+//0~50 walk
+//61~90 stand_Lshot
+//101~123 stand_Rshot
+//133~163 seat_Lshot
+//173~203 seat_Fshot
+//204~228 stand_Fshot
+//229~289 idle
+//290~320 hit
+//321~380 death
+//0~24(addFBX) run
