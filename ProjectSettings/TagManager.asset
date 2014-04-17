@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Building
   - BuildingSkeleton
+  - Helicopter
+  - Drone
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
