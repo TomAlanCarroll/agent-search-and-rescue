@@ -6,6 +6,8 @@ public class SpawnController : MonoBehaviour {
 
 	// Constants
 	public const int NUM_DRONES = 10;
+	public const int MIN_SOLDIERS_PER_BUILDING = 8;
+	public const int MAX_SOLDIERS_PER_BUILDING = 12;
 
 
 	// Use this for initialization
@@ -30,8 +32,18 @@ public class SpawnController : MonoBehaviour {
 		Vector3 helicopterPosition = GameObject.FindGameObjectWithTag ("Helicopter").transform.position;
 
 		for (int i = 0; i < NUM_DRONES; i++)
-		{			
-			Instantiate (dronePrefab, helicopterPosition, Quaternion.identity);
+		{		
+			// Show the first drone camera in the corner of the screen
+			if (i == 0)
+			{
+				var drone = Instantiate (dronePrefab, helicopterPosition, Quaternion.identity);
+
+				((GameObject)drone).camera.depth = 1;
+			}
+			else
+			{
+				Instantiate (dronePrefab, helicopterPosition, Quaternion.identity);
+			}
 		}
 	}
 }
