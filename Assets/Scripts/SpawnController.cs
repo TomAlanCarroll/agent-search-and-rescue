@@ -21,7 +21,7 @@ public class SpawnController : MonoBehaviour {
 			{
 				Vector3 spawnPosition = new Vector3(
 					Random.Range (building.renderer.bounds.min.x, building.renderer.bounds.max.x),
-					Random.Range (building.renderer.bounds.min.y, 20),
+					20,
 					Random.Range (building.renderer.bounds.min.z, building.renderer.bounds.max.z));
 
 				Instantiate (friendlySoldierPrefab, spawnPosition, Quaternion.identity);
