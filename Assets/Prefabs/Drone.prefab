@@ -46,6 +46,7 @@ GameObject:
   - 95: {fileID: 9500000}
   - 20: {fileID: 2000000}
   - 143: {fileID: 14300000}
+  - 114: {fileID: 11400004}
   m_Layer: 0
   m_Name: Drone
   m_TagString: Drone
@@ -381,6 +382,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c8b8e58953695049a5967640ee5b320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dedcfe8e145a6e24cbb2dd2588b4c67e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strategy: 0
+  controller: {fileID: 14300000}
 --- !u!143 &14300000
 CharacterController:
   m_ObjectHideFlags: 1
@@ -388,7 +402,7 @@ CharacterController:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   serializedVersion: 2
-  m_Height: .400000006
+  m_Height: 2
   m_Radius: .400000006
   m_SlopeLimit: 45
   m_StepOffset: .300000012
