@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: f13610a4c79a45046bf2aa98575f3a80
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - friendlySoldierPrefab: {fileID: 100086, guid: 384486abd1a8d724cbd8ffcc1ca2a7ee,
+      type: 2}
+  - dronePrefab: {fileID: 100004, guid: 1bed6dd4406d2114095096fab958cccc, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
