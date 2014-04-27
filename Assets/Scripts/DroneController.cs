@@ -9,9 +9,9 @@ public class DroneController : MonoBehaviour {
 
 	// Constants
 	public const float TURN_RATE = 200f;
-	public const float FLYING_SPEED = 8f;
+	public const float FLYING_SPEED = 12f;
 	public const float INITIAL_RADIUS = 10f;
-	public const float GRAVITY = 20f;
+	public const float GRAVITY = 25f;
 
 	// Spawn Ranges
 	private float MIN_X = 75f;
@@ -104,6 +104,26 @@ public class DroneController : MonoBehaviour {
 					break;
 				}
 			}
+
+			// Check for soldiers in the cameras view
+			GameObject[] soldiers = GameObject.FindGameObjectsWithTag("Friendly");
+			for (int i = 0; i < soldiers.Length; i++)
+			{
+				SoldierController soldierController = soldiers[i].GetComponent<SoldierController>();
+				if (soldierController.status == SoldierController.Status.NOT_FOUND)
+				{
+					if (CheckLineOfSight(soldiers[i]))
+					{
+						soldierController.status = SoldierController.Status.FOUND;
+
+						SpawnController.missingFriendlySoldiers.Remove(soldiers[i]);
+						SpawnController.foundFriendlySoldiers.Add(soldiers[i]);
+
+						// Update Statistics
+						StatisticsWriter.Write();
+					}
+				}
+			}
 		}
 		
 		previousPosition = transform.position;
@@ -127,5 +147,27 @@ public class DroneController : MonoBehaviour {
 		
 		// Move towards the position
 		controller.Move(moveDirection);
+	}
+
+	/// <summary>
+	/// Checks the line of sight for the target within the cameras far clip plan and field of view
+	/// </summary>
+	/// <returns><c>true</c>, if the target is within the cameras far clip plan and field of view, <c>false</c> otherwise.</returns>
+	/// <param name="target">Target. Any GameObject in the environment</param>
+	private bool CheckLineOfSight (GameObject target) 
+	{
+		if (Vector3.Distance(transform.position, target.transform.position) < camera.farClipPlane) // target is within camera far clip plane
+		{
+			if (Vector3.Angle(target.transform.position - transform.position, transform.forward) <= camera.fieldOfView) // target is within FOV
+			{
+				if(Physics.Linecast(transform.position, target.transform.position, Physics.DefaultRaycastLayers) == false) // target can be raycast (is visible) from the camera
+				{
+					// therefore, target is viewable by this drone
+					return true;
+				}
+			}
+		}
+
+		return false;
 	}
 }

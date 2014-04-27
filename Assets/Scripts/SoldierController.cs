@@ -2,12 +2,20 @@
 using System.Collections;
 
 public class SoldierController : MonoBehaviour {
-	public enum State {
+	public enum AnimationState
+	{
 		IDLE,
 		RUNNING,
 		WALKING,
 		HIT,
 		DEATH
+	}
+
+	public enum Status
+	{
+		NOT_FOUND,
+		FOUND,
+		RESCUED
 	}
 
 	[System.Serializable]
@@ -27,7 +35,8 @@ public class SoldierController : MonoBehaviour {
 	
 	public Anim anim;
 	public Animation  aniBody;
-	public State state;
+	public AnimationState state;
+	public Status status;
 	public Vector3 destination;
 	public CharacterController controller;
 	private bool isMoving = false;
@@ -40,7 +49,9 @@ public class SoldierController : MonoBehaviour {
 	public const float GRAVITY = 9.8f; // 4mph is approx 1.78 m/s
 		
 	void Start () {
-		state = State.IDLE;
+		state = AnimationState.IDLE;
+
+		status = Status.NOT_FOUND;
 
 //		RunTowards (new Vector3(transform.position.x +10f, transform.position.y, transform.position.z));
 	}
@@ -51,7 +62,7 @@ public class SoldierController : MonoBehaviour {
 		    destination.x - transform.position.x < 5 &&
 		    destination.z - transform.position.z < 5)
 		{
-			state = State.IDLE;
+			state = AnimationState.IDLE;
 			isMoving = false;
 		}
 		else
@@ -60,23 +71,23 @@ public class SoldierController : MonoBehaviour {
 		}
 
 		// Animate depending on state
-		if (state == State.IDLE || !controller.isGrounded) 
+		if (state == AnimationState.IDLE || !controller.isGrounded) 
 		{
 			aniBody.CrossFade (anim.idle.name, DEFAULT_FADE_LENGTH);
 		}
-		else if (state == State.RUNNING)
+		else if (state == AnimationState.RUNNING)
 		{
 			aniBody.CrossFade (anim.run.name, DEFAULT_FADE_LENGTH);
 		}
-		else if (state == State.WALKING)
+		else if (state == AnimationState.WALKING)
 		{
 			aniBody.CrossFade (anim.walk.name, DEFAULT_FADE_LENGTH);
 		}
-		else if (state == State.HIT)
+		else if (state == AnimationState.HIT)
 		{
 			aniBody.CrossFade (anim.hit.name, DEFAULT_FADE_LENGTH);
 		}
-		else if (state == State.DEATH)
+		else if (state == AnimationState.DEATH)
 		{
 			aniBody.CrossFade (anim.death.name, DEFAULT_FADE_LENGTH);
 		}
@@ -85,7 +96,7 @@ public class SoldierController : MonoBehaviour {
 	public void RunTowards (Vector3 destination)
 	{
 		this.destination = destination;
-		this.state = State.RUNNING;
+		this.state = AnimationState.RUNNING;
 		isMoving = true;
 	}
 
@@ -108,11 +119,11 @@ public class SoldierController : MonoBehaviour {
 			return;
 		}
 
-		if (state == State.RUNNING)
+		if (state == AnimationState.RUNNING)
 		{
 			speed = RUNNING_SPEED;
 		}
-		else if (state == State.WALKING)
+		else if (state == AnimationState.WALKING)
 		{
 			speed = WALKING_SPEED;
 		}		
