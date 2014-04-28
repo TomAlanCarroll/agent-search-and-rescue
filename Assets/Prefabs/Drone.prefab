@@ -194,7 +194,7 @@ Camera:
     width: .200000003
     height: .200000003
   near clip plane: .400000006
-  far clip plane: 10
+  far clip plane: 20
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -393,7 +393,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedcfe8e145a6e24cbb2dd2588b4c67e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strategy: 0
   controller: {fileID: 14300000}
 --- !u!143 &14300000
 CharacterController:
