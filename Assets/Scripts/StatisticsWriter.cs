@@ -71,6 +71,11 @@ public class StatisticsWriter : MonoBehaviour
 		{
 			// All soldiers have been rescued
 			// Record overall statistics
+			File.AppendAllText(directory + @"\" + rescuedResultFilename, 
+			                   Environment.NewLine +
+			                   Environment.NewLine +
+			                   "Average Rescue Time:," +
+			                   (timeSpan.TotalSeconds / SpawnController.friendlySoldierCount) + " Seconds");
 		}
 	}
 }

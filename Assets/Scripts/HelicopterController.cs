@@ -40,7 +40,7 @@ public class HelicopterController : MonoBehaviour {
 				
 				foreach (GameObject soldier in SpawnController.foundFriendlySoldiers)
 				{
-					if (Vector3.Distance(transform.position, soldier.transform.position) < minDistance)
+					if (soldier != null && Vector3.Distance(transform.position, soldier.transform.position) < minDistance)
 					{
 						closestSoldier = soldier;
 						minDistance = Vector3.Distance(transform.position, soldier.transform.position);
@@ -68,29 +68,26 @@ public class HelicopterController : MonoBehaviour {
 	}
 	
 	private void TravelToHome()
-	{
-		if (destination != null && startPosition != null && SpawnController.foundFriendlySoldiers.Count > 0)
-		{			
-			// Maintain height
-			Vector3 actualDestination = new Vector3(0f, transform.position.y, 0f);
+	{			
+		// Maintain height
+		Vector3 actualDestination = new Vector3(0f, transform.position.y, 0f);
+		
+		transform.LookAt (actualDestination, Vector3.up);
+		if (transform.position.y > 139)
+		{
+			isGrounded = false;
+			isAscending = false;
 			
-			transform.LookAt (actualDestination, Vector3.up);
-			if (transform.position.y > 139)
-			{
-				isGrounded = false;
-				isAscending = false;
-				
-				// Move towards the destination
-				transform.position = Vector3.Lerp(transform.position, actualDestination, 0.3f * Time.deltaTime);
-				
-				// Lerp towards an angle when traveling
-				transform.rotation = Quaternion.Euler(15f, transform.eulerAngles.y, transform.eulerAngles.z);
-			}
-			else
-			{
-				isAscending = true;
-				controller.Move (new Vector3(0, 2, 0));
-			}
+			// Move towards the destination
+			transform.position = Vector3.Lerp(transform.position, actualDestination, 0.3f * Time.deltaTime);
+			
+			// Lerp towards an angle when traveling
+			transform.rotation = Quaternion.Euler(15f, transform.eulerAngles.y, transform.eulerAngles.z);
+		}
+		else
+		{
+			isAscending = true;
+			controller.Move (new Vector3(0, 2, 0));
 		}
 	}
 	
@@ -141,6 +138,15 @@ public class HelicopterController : MonoBehaviour {
 				}
 
 				// No nearby soldiers; ascend
+				isAscending = true;
+				controller.Move (new Vector3(0, 2, 0));
+			}
+		}
+		else
+		{
+			// No nearby soldiers; ascend
+			if (transform.position.y < 139f)
+			{
 				isAscending = true;
 				controller.Move (new Vector3(0, 2, 0));
 			}

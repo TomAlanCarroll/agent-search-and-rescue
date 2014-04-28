@@ -4,14 +4,15 @@ using System.Collections;
 public class DroneController : MonoBehaviour {
 	public enum Strategy {
 		RANDOM,
-		SPREAD_OUT
+		SPIRAL
 	}
 
 	// Constants
 	public const float TURN_RATE = 200f;
-	public const float FLYING_SPEED = 36f;
+	public const float FLYING_SPEED = 25f;
 	public const float INITIAL_RADIUS = 10f;
 	public const float GRAVITY = 25f;
+	public const float AOI_ROTATION_SPEED = 5f;
 
 	// Spawn Ranges
 	private float MIN_X = 75f;
@@ -23,7 +24,9 @@ public class DroneController : MonoBehaviour {
 
 	public CharacterController controller;
 
+	// State flags
 	private bool initial = true;
+	private bool areaOfInterestSearch = false;
 
 	private float initialTravelAngle;
 	private float initialLength;
@@ -31,15 +34,20 @@ public class DroneController : MonoBehaviour {
 	private float xOffset;
 	private float zOffset;
 
+	// The current destination of the drones
 	private Vector3 destination;
+
+	// The current area of interest to circle around (if any)
+	private Vector3 areaOfInterest;
+
+	// The degree counter for AOI rotation
+	private float areaOfInterestRotationCounter = 0f;
 
 	private Vector3 previousPosition;
 
 	private float velocity;
 		
 	void Start () {
-		strategy = Strategy.RANDOM;
-
 		// Determine a random angle to travel towards relative to the helicopter
 		initialTravelAngle = Random.Range(0f, 360f);
 
@@ -85,7 +93,7 @@ public class DroneController : MonoBehaviour {
 					// Pick a random point within the terrain to be the next destination
 					destination = new Vector3(Random.Range (MIN_X, MAX_X), 0f, Random.Range (MIN_Z, MAX_Z)); 
 					break;
-				case Strategy.SPREAD_OUT:
+				case Strategy.SPIRAL:
 					// TODO: Implement
 					break;
 				}
@@ -99,7 +107,7 @@ public class DroneController : MonoBehaviour {
 					// Pick a random point within the terrain to be the next destination
 					destination = new Vector3(Random.Range (MIN_X, MAX_X), 0f, Random.Range (MIN_Z, MAX_Z)); 
 					break;
-				case Strategy.SPREAD_OUT:
+				case Strategy.SPIRAL:
 					// TODO: Implement
 					break;
 				}
@@ -121,6 +129,10 @@ public class DroneController : MonoBehaviour {
 
 						SpawnController.foundFriendlySoldierCount++;
 
+						// Mark this as an area of interest to search around
+						areaOfInterest = soldiers[i].transform.position;
+						areaOfInterestSearch = true;
+
 						// Update Statistics
 						StatisticsWriter.Found();
 					}
@@ -138,17 +150,53 @@ public class DroneController : MonoBehaviour {
 
 	private void Travel(Strategy strategy)
 	{
-		Vector3 moveDirection;
+		// Check for a current area of interest
+		if (!areaOfInterestSearch)
+		{
+			// No area of interest, travel to the next destination
+			Vector3 moveDirection;
 
-		transform.LookAt (destination, Vector3.up);
-		
-		moveDirection = FLYING_SPEED * Vector3.Normalize(destination - transform.position) * Time.deltaTime;
+			transform.LookAt (destination, Vector3.up);
+			
+			moveDirection = FLYING_SPEED * Vector3.Normalize(destination - transform.position) * Time.deltaTime;
 
-		// Apply gravity
-		moveDirection.y -= GRAVITY * Time.deltaTime;
-		
-		// Move towards the position
-		controller.Move(moveDirection);
+			// Apply gravity
+			moveDirection.y -= GRAVITY * Time.deltaTime;
+			
+			// Move towards the position
+			controller.Move(moveDirection);
+		}
+		else
+		{
+			// There is an area of interest
+			// Rotate the drone around the area of interest with a radius of the camera's far clipping plane
+			Vector3 currentPosition = transform.position - areaOfInterest;
+
+			float angle = 5f * FLYING_SPEED * Time.deltaTime;
+
+			Vector3 newPosition = Quaternion.Euler(0, angle, 0) * currentPosition;
+
+			Vector3 displacement = newPosition - currentPosition;
+
+			// Apply gravity
+			displacement.y -= GRAVITY * Time.deltaTime;
+
+			// Move the controller
+			controller.Move(displacement);
+
+			// Keep looking at the area of interest
+			transform.LookAt (areaOfInterest, Vector3.up);
+
+			areaOfInterestRotationCounter += angle;
+
+			// If the drone has rotated in a full circle, end area of interest rotation
+			if (areaOfInterestRotationCounter > 360f)
+			{
+				areaOfInterestSearch = false;
+				areaOfInterestRotationCounter = 0;
+				areaOfInterest = Vector3.zero;
+			}
+		}
 	}
 
 	/// <summary>
