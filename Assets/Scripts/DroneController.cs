@@ -19,7 +19,7 @@ public class DroneController : MonoBehaviour {
 	private float MIN_Z = 50f;
 	private float MAX_Z = 700f;
 
-	public Strategy strategy;
+	public static Strategy strategy;
 
 	public CharacterController controller;
 

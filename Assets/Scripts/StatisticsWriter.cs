@@ -1,25 +1,77 @@
 using UnityEngine;
-
+using System;
+using System.IO;
 public class StatisticsWriter : MonoBehaviour
 {
-	private static int rescueCount = 0;
+	public static int rescueCount = 0;
+
+	private static string directory = "Results";
+	private static string foundResultFilename;
+	private static string rescuedResultFilename;
+
+	private static DateTime startTime;
+	private static string startTimeStr;
 
 	// Use this for initialization
 	void Start () {
-		
+		// Verify the Results directory exists and create it if it doesn't
+		if (!Directory.Exists(directory))
+		{
+			Directory.CreateDirectory(directory);
+		}
+
+		// Record the simulation start time
+		startTime = DateTime.Now;
+		startTimeStr = startTime.ToString("yyyy-MM-dd HHmmss");
+
+		// Setup the filenames
+		foundResultFilename = startTimeStr + " " + DroneController.strategy.ToString() + " Found Results.csv";
+		rescuedResultFilename = startTimeStr + " " + HelicopterController.rescueStrategy.ToString() + " Rescued Results.csv";
+
+		// Add column headers to the CSV files
+		File.WriteAllText(directory + @"\" + foundResultFilename, "# Found,# Total,Time");
+		File.WriteAllText(directory + @"\" + rescuedResultFilename, "# Rescued,# Total,Time");
 	}
 
-	// Writes statistics to the file
+	// Writes drone statistics to the results file
 	public static void Found()
 	{
+		TimeSpan timeSpan = DateTime.Now - startTime;
+
+		// Write to the results file
+		File.AppendAllText(directory + @"\" + foundResultFilename, 
+		                   Environment.NewLine +
+		                   SpawnController.foundFriendlySoldierCount + "," +
+		                   SpawnController.friendlySoldierCount + "," +
+		                   timeSpan.ToString());
+
+		// Log to the console
 		Debug.Log("Found missing soldier #" + SpawnController.foundFriendlySoldierCount + 
 		          " of " + SpawnController.friendlySoldierCount);
 	}
+
+	// Writes helicopter statistics to the results file
 	public static void Rescued()
 	{
+		TimeSpan timeSpan = DateTime.Now - startTime;
+
 		rescueCount++;
 
+		// Write to the results file
+		File.AppendAllText(directory + @"\" + rescuedResultFilename, 
+		                   Environment.NewLine +
+		                   rescueCount + "," +
+		                   SpawnController.friendlySoldierCount + "," +
+		                   timeSpan.ToString());
+
+		// Log to the console
 		Debug.Log("Rescued missing soldier #" + rescueCount + " of " + SpawnController.friendlySoldierCount);
+
+		if (rescueCount == SpawnController.friendlySoldierCount)
+		{
+			// All soldiers have been rescued
+			// Record overall statistics
+		}
 	}
 }
 

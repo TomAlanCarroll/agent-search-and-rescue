@@ -12,7 +12,7 @@ public class HelicopterController : MonoBehaviour {
 	public const float FLYING_SPEED = 12f;
 	public const float INITIAL_RADIUS = 10f;
 
-	public RescueStrategy rescueStrategy;
+	public static RescueStrategy rescueStrategy;
 
 	public CharacterController controller;
 	public static bool isGrounded;
@@ -56,10 +56,45 @@ public class HelicopterController : MonoBehaviour {
 			}
 		}
 		
-		Travel();		
+		
+		if (StatisticsWriter.rescueCount == SpawnController.friendlySoldierCount)
+		{
+			TravelToHome();	
+		}
+		else
+		{
+			TravelToRescuePoint();	
+		}
 	}
 	
-	private void Travel()
+	private void TravelToHome()
+	{
+		if (destination != null && startPosition != null && SpawnController.foundFriendlySoldiers.Count > 0)
+		{			
+			// Maintain height
+			Vector3 actualDestination = new Vector3(0f, transform.position.y, 0f);
+			
+			transform.LookAt (actualDestination, Vector3.up);
+			if (transform.position.y > 139)
+			{
+				isGrounded = false;
+				isAscending = false;
+				
+				// Move towards the destination
+				transform.position = Vector3.Lerp(transform.position, actualDestination, 0.3f * Time.deltaTime);
+				
+				// Lerp towards an angle when traveling
+				transform.rotation = Quaternion.Euler(15f, transform.eulerAngles.y, transform.eulerAngles.z);
+			}
+			else
+			{
+				isAscending = true;
+				controller.Move (new Vector3(0, 2, 0));
+			}
+		}
+	}
+	
+	private void TravelToRescuePoint()
 	{
 		if (destination != null && startPosition != null && SpawnController.foundFriendlySoldiers.Count > 0)
 		{			
@@ -77,7 +112,7 @@ public class HelicopterController : MonoBehaviour {
 				// Move towards the destination
 				transform.position = Vector3.Lerp(transform.position, actualDestination, 0.3f * Time.deltaTime);
 
-				// Lerp towards a angle when traveling
+				// Lerp towards an angle when traveling
 				transform.rotation = Quaternion.Euler(Mathf.Lerp(0f, 15f, 2f * distanceFromDestination / Vector3.Distance (startPosition, destination)), 
 				                                      transform.eulerAngles.y, transform.eulerAngles.z);
 			}
@@ -86,7 +121,7 @@ public class HelicopterController : MonoBehaviour {
 				isGrounded = false;
 
 				// Descend
-				controller.Move (new Vector3(0, -1, 0));
+				controller.Move (new Vector3(0, -2, 0));
 			}
 			else
 			{
@@ -107,7 +142,7 @@ public class HelicopterController : MonoBehaviour {
 
 				// No nearby soldiers; ascend
 				isAscending = true;
-				controller.Move (new Vector3(0, 1, 0));
+				controller.Move (new Vector3(0, 2, 0));
 			}
 		}
 	}
