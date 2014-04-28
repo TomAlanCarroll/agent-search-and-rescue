@@ -68,13 +68,18 @@ public class HelicopterController : MonoBehaviour {
 			
 			transform.LookAt (actualDestination, Vector3.up);
 
-			if (Vector3.Distance(transform.position, actualDestination) > 3f && transform.position.y > 139)
+			float distanceFromDestination = Vector3.Distance(transform.position, actualDestination);
+			if (distanceFromDestination > 3f && transform.position.y > 139)
 			{
 				isGrounded = false;
 				isAscending = false;
 
 				// Move towards the destination
-				transform.position = Vector3.Lerp(startPosition, actualDestination, 0.3f * Time.deltaTime);
+				transform.position = Vector3.Lerp(transform.position, actualDestination, 0.3f * Time.deltaTime);
+
+				// Lerp towards a angle when traveling
+				transform.rotation = Quaternion.Euler(Mathf.Lerp(0f, 15f, 2f * distanceFromDestination / Vector3.Distance (startPosition, destination)), 
+				                                      transform.eulerAngles.y, transform.eulerAngles.z);
 			}
 			else if (!controller.isGrounded && !isAscending)
 			{
