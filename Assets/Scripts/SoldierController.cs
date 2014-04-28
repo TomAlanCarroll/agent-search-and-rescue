@@ -56,7 +56,33 @@ public class SoldierController : MonoBehaviour {
 //		RunTowards (new Vector3(transform.position.x +10f, transform.position.y, transform.position.z));
 	}
 	
-	void Update () {		
+	void Update () {	
+		GameObject helicopter = GameObject.FindGameObjectWithTag("Helicopter");
+
+		// Check if the rescue helicopter is nearby and grounded
+		if (HelicopterController.isGrounded && Vector3.Distance(helicopter.transform.position, transform.position) < 30f)
+		{
+			// Get the helicopter position
+			RunTowards(helicopter.transform.position);
+
+			if (SpawnController.missingFriendlySoldiers.Contains(gameObject))
+			{
+				SpawnController.missingFriendlySoldiers.Remove(gameObject);
+			}
+
+			if (SpawnController.foundFriendlySoldiers.Contains(gameObject))
+			{
+				SpawnController.foundFriendlySoldiers.Remove(gameObject);
+			}
+
+			SpawnController.rescuedFriendlySoldiers.Add(gameObject);
+
+			Destroy(gameObject);
+
+			// Update the statistics
+			StatisticsWriter.Rescued();
+		}
+
 		// Go to idle state if we have reached the destination
 		if (isMoving && 
 		    destination.x - transform.position.x < 5 &&
@@ -133,7 +159,7 @@ public class SoldierController : MonoBehaviour {
 		                                         Mathf.Deg2Rad * TURN_RATE * Time.deltaTime, 1);
 		transform.rotation = Quaternion.LookRotation(rotation);
 		
-		moveDirection = speed * Vector3.Normalize(transform.position - destination) * Time.deltaTime;
+		moveDirection = speed * Vector3.Normalize(destination - transform.position) * Time.deltaTime;
 		
 		// Apply gravity
 		moveDirection.y -= GRAVITY * Time.deltaTime;

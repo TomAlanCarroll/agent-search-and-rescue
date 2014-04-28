@@ -7319,7 +7319,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 5f5ca2089b9f06e47ab55fc566d8291c, type: 2}
   m_PrefabInternal: {fileID: 728382928}
   m_GameObject: {fileID: 226289642}
-  m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+  m_LocalRotation: {x: -3.09086232e-08, y: -.707106829, z: -.707106829, w: 3.09086232e-08}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -23962,7 +23962,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 5f5ca2089b9f06e47ab55fc566d8291c, type: 2}
       propertyPath: m_LocalRotation.y
-      value: .707106829
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 5f5ca2089b9f06e47ab55fc566d8291c, type: 2}
       propertyPath: m_LocalRotation.z
@@ -23970,11 +23970,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 5f5ca2089b9f06e47ab55fc566d8291c, type: 2}
       propertyPath: m_LocalRotation.w
-      value: .707106829
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100006, guid: 5f5ca2089b9f06e47ab55fc566d8291c, type: 2}
       propertyPath: m_TagString
       value: Helicopter
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 5f5ca2089b9f06e47ab55fc566d8291c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -3.09086232e-08
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 5f5ca2089b9f06e47ab55fc566d8291c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -.707106829
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 5f5ca2089b9f06e47ab55fc566d8291c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 3.09086232e-08
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 5f5ca2089b9f06e47ab55fc566d8291c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -.707106829
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5f5ca2089b9f06e47ab55fc566d8291c, type: 2}
@@ -37793,9 +37809,9 @@ MonoBehaviour:
   canControl: 1
   useFixedUpdate: 1
   movement:
-    maxForwardSpeed: 15
-    maxSidewaysSpeed: 10
-    maxBackwardsSpeed: 10
+    maxForwardSpeed: 25
+    maxSidewaysSpeed: 25
+    maxBackwardsSpeed: 25
     slopeSpeedMultiplier:
       serializedVersion: 2
       m_Curve:
@@ -37818,7 +37834,7 @@ MonoBehaviour:
       m_PostInfinity: 2
     maxGroundAcceleration: 20
     maxAirAcceleration: 100
-    gravity: 9.80000019
+    gravity: 0
     maxFallSpeed: 30
   jumping:
     enabled: 0
@@ -46206,7 +46222,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: dc99c6574e000544f8c0cea7c0da4198, type: 2}
       propertyPath: movement.gravity
-      value: 9.80000019
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: dc99c6574e000544f8c0cea7c0da4198, type: 2}
+      propertyPath: movement.maxForwardSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: dc99c6574e000544f8c0cea7c0da4198, type: 2}
+      propertyPath: movement.maxSidewaysSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: dc99c6574e000544f8c0cea7c0da4198, type: 2}
+      propertyPath: movement.maxBackwardsSpeed
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc99c6574e000544f8c0cea7c0da4198, type: 2}
@@ -70235,6 +70263,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 2022743274}
   - 111: {fileID: 2022743275}
+  - 114: {fileID: 2022743276}
+  - 143: {fileID: 2022743277}
   m_Layer: 0
   m_Name: Helicopter
   m_TagString: Helicopter
@@ -70248,7 +70278,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400006, guid: 5f5ca2089b9f06e47ab55fc566d8291c, type: 2}
   m_PrefabInternal: {fileID: 728382928}
   m_GameObject: {fileID: 2022743273}
-  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 491.328979, y: 140, z: 329.003174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -70270,6 +70300,33 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &2022743276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2022743273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee078e6926f23df439b9a91aa9cf7459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rescueStrategy: 0
+  controller: {fileID: 2022743277}
+--- !u!143 &2022743277
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2022743273}
+  serializedVersion: 2
+  m_Height: 2.45000005
+  m_Radius: .100000001
+  m_SlopeLimit: 45
+  m_StepOffset: .300000012
+  m_SkinWidth: .0799999982
+  m_MinMoveDistance: 0
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2023925229
 GameObject:
   m_ObjectHideFlags: 0

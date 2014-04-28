@@ -8,8 +8,12 @@ public class SpawnController : MonoBehaviour {
 	public static List<GameObject> missingFriendlySoldiers;
 
 	public static List<GameObject> foundFriendlySoldiers;
+	
+	public static List<GameObject> rescuedFriendlySoldiers;
 
 	public static int friendlySoldierCount = 0;
+	
+	public static int foundFriendlySoldierCount = 0;
 
 	// Constants
 	public const int NUM_DRONES = 10;
@@ -22,6 +26,7 @@ public class SpawnController : MonoBehaviour {
 	void Start () {
 		missingFriendlySoldiers = new List<GameObject>();
 		foundFriendlySoldiers = new List<GameObject>();
+		rescuedFriendlySoldiers = new List<GameObject>();
 		
 		// Initialize friendly soldiers in the buildings
 		foreach (GameObject spawnPoint in GameObject.FindGameObjectsWithTag("SpawnPoint"))

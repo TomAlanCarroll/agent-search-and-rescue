@@ -9,7 +9,7 @@ public class DroneController : MonoBehaviour {
 
 	// Constants
 	public const float TURN_RATE = 200f;
-	public const float FLYING_SPEED = 12f;
+	public const float FLYING_SPEED = 36f;
 	public const float INITIAL_RADIUS = 10f;
 	public const float GRAVITY = 25f;
 
@@ -119,8 +119,10 @@ public class DroneController : MonoBehaviour {
 						SpawnController.missingFriendlySoldiers.Remove(soldiers[i]);
 						SpawnController.foundFriendlySoldiers.Add(soldiers[i]);
 
+						SpawnController.foundFriendlySoldierCount++;
+
 						// Update Statistics
-						StatisticsWriter.Write();
+						StatisticsWriter.Found();
 					}
 				}
 			}
