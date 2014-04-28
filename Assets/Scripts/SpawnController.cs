@@ -67,5 +67,9 @@ public class SpawnController : MonoBehaviour {
 				Instantiate (dronePrefab, helicopterPosition, Quaternion.identity);
 			}
 		}
+
+		// Update the GUI text
+		GameObject rescuedText = GameObject.FindGameObjectWithTag("TotalText");
+		rescuedText.guiText.text = friendlySoldierCount.ToString();
 	}
 }

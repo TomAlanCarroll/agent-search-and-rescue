@@ -36,6 +36,11 @@ public class StatisticsWriter : MonoBehaviour
 	// Writes drone statistics to the results file
 	public static void Found()
 	{
+		// Update the GUI text
+		GameObject rescuedText = GameObject.FindGameObjectWithTag("FoundText");
+		rescuedText.guiText.text = SpawnController.foundFriendlySoldierCount.ToString();
+
+		// Calculate the current simulation time
 		TimeSpan timeSpan = DateTime.Now - startTime;
 
 		// Write to the results file
@@ -53,9 +58,14 @@ public class StatisticsWriter : MonoBehaviour
 	// Writes helicopter statistics to the results file
 	public static void Rescued()
 	{
+		// Calculate the current simulation time
 		TimeSpan timeSpan = DateTime.Now - startTime;
 
 		rescueCount++;
+		
+		// Update the GUI text
+		GameObject rescuedText = GameObject.FindGameObjectWithTag("RescuedText");
+		rescuedText.guiText.text = rescueCount.ToString();
 
 		// Write to the results file
 		File.AppendAllText(directory + @"\" + rescuedResultFilename, 
@@ -76,6 +86,10 @@ public class StatisticsWriter : MonoBehaviour
 			                   Environment.NewLine +
 			                   "Average Rescue Time:," +
 			                   (timeSpan.TotalSeconds / SpawnController.friendlySoldierCount) + " Seconds");
+
+			// Show the mission complete text
+			GameObject missionCompleteText = GameObject.FindGameObjectWithTag("MissionCompleteText");
+			missionCompleteText.guiText.pixelOffset = Vector2.zero;
 		}
 	}
 }

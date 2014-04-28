@@ -10,6 +10,10 @@ TagManager:
   - Helicopter
   - Drone
   - SpawnPoint
+  - MissionCompleteText
+  - FoundText
+  - RescuedText
+  - TotalText
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
