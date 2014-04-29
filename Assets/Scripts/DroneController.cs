@@ -1,26 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class DroneController : MonoBehaviour {
-	public enum Strategy {
-		RANDOM,
-		SPIRAL
-	}
-
 	// Constants
 	public const float TURN_RATE = 200f;
 	public const float FLYING_SPEED = 25f;
 	public const float INITIAL_RADIUS = 10f;
 	public const float GRAVITY = 25f;
 	public const float AOI_ROTATION_SPEED = 5f;
-
-	// Spawn Ranges
-	private float MIN_X = 75f;
-	private float MAX_X = 1070f;
-	private float MIN_Z = 50f;
-	private float MAX_Z = 700f;
-
-	public static Strategy strategy;
 
 	public CharacterController controller;
 
@@ -48,8 +36,9 @@ public class DroneController : MonoBehaviour {
 	private float velocity;
 		
 	void Start () {
+
 		// Determine a random angle to travel towards relative to the helicopter
-		initialTravelAngle = Random.Range(0f, 360f);
+		initialTravelAngle = UnityEngine.Random.Range(0f, 360f);
 
 		initialPosition = transform.position;
 		
@@ -83,32 +72,36 @@ public class DroneController : MonoBehaviour {
 		}
 		else
 		{
-			// Check if this drone has reached it's destination
+			// Check if this drone has found a target
 			if (Vector3.Distance(transform.position, destination) < 1f)
 			{
 				
-				switch (strategy) 
+				switch (SpawnController.droneStrategy) 
 				{
-				case Strategy.RANDOM:
+				case SpawnController.DroneStrategy.RANDOM:
 					// Pick a random point within the terrain to be the next destination
-					destination = new Vector3(Random.Range (MIN_X, MAX_X), 0f, Random.Range (MIN_Z, MAX_Z)); 
+					destination = new Vector3(Random.Range (SpawnController.MIN_X, SpawnController.MAX_X), 0f, Random.Range (SpawnController.MIN_Z, SpawnController.MAX_Z)); 
 					break;
-				case Strategy.SPIRAL:
-					// TODO: Implement
+				case SpawnController.DroneStrategy.ZONES:
+					destination = new Vector3(Random.Range (SpawnController.currentZone.MIN_X, SpawnController.currentZone.MAX_X), 
+					                          0f, 
+					                          Random.Range (SpawnController.currentZone.MIN_Z, SpawnController.currentZone.MAX_Z)); 
 					break;
 				}
 			}
 			// Check if the velocity of the drone has decreased below the allowed threshold
 			else if (velocity < 1f)
 			{
-				switch (strategy) 
+				switch (SpawnController.droneStrategy) 
 				{
-				case Strategy.RANDOM:
+				case SpawnController.DroneStrategy.RANDOM:
 					// Pick a random point within the terrain to be the next destination
-					destination = new Vector3(Random.Range (MIN_X, MAX_X), 0f, Random.Range (MIN_Z, MAX_Z)); 
+					destination = new Vector3(Random.Range (SpawnController.MIN_X, SpawnController.MAX_X), 0f, Random.Range (SpawnController.MIN_Z, SpawnController.MAX_Z)); 
 					break;
-				case Strategy.SPIRAL:
-					// TODO: Implement
+				case SpawnController.DroneStrategy.ZONES:
+					destination = new Vector3(Random.Range (SpawnController.currentZone.MIN_X, SpawnController.currentZone.MAX_X), 
+					                          0f, 
+					                          Random.Range (SpawnController.currentZone.MIN_Z, SpawnController.currentZone.MAX_Z)); 
 					break;
 				}
 			}
@@ -142,13 +135,13 @@ public class DroneController : MonoBehaviour {
 		
 		previousPosition = transform.position;
 
-		Travel (strategy);
+		Travel();
 
 		// Calculate the current velocity
 		velocity = (Vector3.Distance (transform.position, previousPosition)) / Time.deltaTime;
 	}
 
-	private void Travel(Strategy strategy)
+	private void Travel()
 	{
 		// Check for a current area of interest
 		if (!areaOfInterestSearch)

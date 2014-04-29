@@ -25,7 +25,7 @@ public class StatisticsWriter : MonoBehaviour
 		startTimeStr = startTime.ToString("yyyy-MM-dd HHmmss");
 
 		// Setup the filenames
-		foundResultFilename = startTimeStr + " " + DroneController.strategy.ToString() + " Found Results.csv";
+		foundResultFilename = startTimeStr + " " + SpawnController.droneStrategy.ToString() + " Found Results.csv";
 		rescuedResultFilename = startTimeStr + " " + HelicopterController.rescueStrategy.ToString() + " Rescued Results.csv";
 
 		// Add column headers to the CSV files
