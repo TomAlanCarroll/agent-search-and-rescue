@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class DroneController : MonoBehaviour {
 	// Constants
 	public const float TURN_RATE = 200f;
-	public const float FLYING_SPEED = 25f;
+	public const float FLYING_SPEED = 40f;
 	public const float INITIAL_RADIUS = 10f;
 	public const float GRAVITY = 25f;
 	public const float AOI_ROTATION_SPEED = 5f;
@@ -99,9 +99,40 @@ public class DroneController : MonoBehaviour {
 					destination = new Vector3(Random.Range (SpawnController.MIN_X, SpawnController.MAX_X), 0f, Random.Range (SpawnController.MIN_Z, SpawnController.MAX_Z)); 
 					break;
 				case SpawnController.DroneStrategy.ZONES:
-					destination = new Vector3(Random.Range (SpawnController.currentZone.MIN_X, SpawnController.currentZone.MAX_X), 
-					                          0f, 
-					                          Random.Range (SpawnController.currentZone.MIN_Z, SpawnController.currentZone.MAX_Z)); 
+//					destination = new Vector3(Random.Range (SpawnController.currentZone.MIN_X, SpawnController.currentZone.MAX_X), 
+//					                          0f, 
+//					                          Random.Range (SpawnController.currentZone.MIN_Z, SpawnController.currentZone.MAX_Z)); 
+
+					int currentZoneIndex = SpawnController.zones.IndexOf(SpawnController.currentZone);
+
+					float minX = 0;
+					float maxX = 0;
+					float minZ = 0;
+					float maxZ = 0;
+
+					if (currentZoneIndex > 0)
+					{
+						minX = SpawnController.zones[currentZoneIndex - 1].MIN_X;
+					}
+					else
+					{
+						minX = SpawnController.zones[SpawnController.zones.Count - 1].MIN_X;
+					}
+
+					if (currentZoneIndex < SpawnController.zones.Count - 1)
+					{
+						maxX = SpawnController.zones[currentZoneIndex + 1].MAX_X;
+					}
+					else
+					{
+						maxX = SpawnController.zones[0].MAX_X;
+					}
+
+
+					minZ = SpawnController.MIN_Z;
+					maxZ = SpawnController.MAX_Z;
+
+					destination = new Vector3(Random.Range (minX, maxX), 0f, Random.Range (minZ, maxZ)); 
 					break;
 				}
 			}

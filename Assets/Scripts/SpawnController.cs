@@ -22,19 +22,19 @@ public class SpawnController : MonoBehaviour {
 
 	// Constants
 	public const int NUM_DRONES = 10;
-	public const int MIN_SOLDIERS_PER_SQUAD = 8;
-	public const int MAX_SOLDIERS_PER_SQUAD = 12;
+	public const int MIN_SOLDIERS_PER_SQUAD = 10;
+	public const int MAX_SOLDIERS_PER_SQUAD = 10;
 	public const float MAX_SQUAD_RADIUS = 10f;
 	public const float ZONE_SEARCH_SECONDS = 30f;
 	
 	// Spawn Ranges
-	public const float MIN_X = 75f;
-	public const float MAX_X = 1070f;
-	public const float MIN_Z = 50f;
+	public const float MIN_X = 140f;
+	public const float MAX_X = 920f;
+	public const float MIN_Z = 140f;
 	public const float MAX_Z = 700f;	
 	
 	// Zones (including ranges)
-	private List<Zone> zones;
+	public static List<Zone> zones;
 	
 	// Current zone to search
 	public static Zone currentZone;
@@ -103,20 +103,48 @@ public class SpawnController : MonoBehaviour {
 			int zSegments = 2;
 			
 			// Segment sizes for the X-Axis
-			float xSegmentSize = (MIN_X + MAX_X) / xSegments;
+			float xSegmentSize = (MAX_X - MIN_X) / xSegments;
 			
 			// Segment sizes for the Z-Axis
-			float zSegmentSize = (MIN_Z + MAX_Z) / zSegments;
+			float zSegmentSize = (MAX_Z - MIN_Z) / zSegments;
 			
 			for (int i = 0; i < zSegments; i++)
 			{
 				for (int j = 0; j < xSegments; j++)
 				{
-					float minX = MIN_X + (j * xSegmentSize);
-					float maxX = minX + xSegmentSize;
-					
-					float minZ = MIN_Z + (i * zSegmentSize);
-					float maxZ = minZ + zSegmentSize;
+					float minX = 0;
+					float maxX = 0;
+
+					float minZ = 0;
+					float maxZ = 0;
+
+
+					if (i % 2 == 0)
+					{
+						// Even rows
+						minX = MIN_X + (j * xSegmentSize);
+						maxX = minX + xSegmentSize;
+						
+						minZ = MIN_Z + (i * zSegmentSize);
+						maxZ = minZ + zSegmentSize;
+
+						// Slightly expand into the center of the search space
+						maxZ += (0.2f * zSegmentSize);
+					}
+					else
+					{
+						// Odd rows
+						// Reverse the order of segmentation to create 
+						// a continuous zone path with the previous row
+						maxX = MAX_X - (j * xSegmentSize);
+						minX = maxX - xSegmentSize;
+						
+						minZ = MIN_Z + (i * zSegmentSize);
+						maxZ = minZ + zSegmentSize;
+						
+						// Slightly expand into the center of the search space
+						minZ -= (0.2f * zSegmentSize);
+					}
 
 					Zone zone = new Zone(minX, maxX, minZ, maxZ);
 					zones.Add(zone);
@@ -160,6 +188,7 @@ public class SpawnController : MonoBehaviour {
 					currentZone = zones[nextZoneIndex];
 				}
 
+				nextZoneIndex++;
 				zoneText.guiText.text = nextZoneIndex.ToString();
 			}
 		}

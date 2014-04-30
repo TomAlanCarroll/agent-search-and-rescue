@@ -90,6 +90,8 @@ public class StatisticsWriter : MonoBehaviour
 			// Show the mission complete text
 			GameObject missionCompleteText = GameObject.FindGameObjectWithTag("MissionCompleteText");
 			missionCompleteText.guiText.pixelOffset = Vector2.zero;
+
+			Application.LoadLevel (Application.loadedLevelName);
 		}
 	}
 }
