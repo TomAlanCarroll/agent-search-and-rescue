@@ -23,7 +23,10 @@ public class HelicopterController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		// Reset all static variables so the scene reset will work correctly
 		rescueStrategy = RescueStrategy.RESCUE_CLOSEST;
+		isGrounded = false;
+		isAscending = false;
 	}
 	
 	// Update is called once per frame

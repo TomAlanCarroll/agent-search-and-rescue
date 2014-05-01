@@ -14,6 +14,12 @@ public class StatisticsWriter : MonoBehaviour
 
 	// Use this for initialization
 	void Start () {
+		// Reset all static variables so the scene reset will work correctly
+		rescueCount = 0;
+		foundResultFilename = null;
+		rescuedResultFilename = null;
+		startTimeStr = null;
+
 		// Verify the Results directory exists and create it if it doesn't
 		if (!Directory.Exists(directory))
 		{

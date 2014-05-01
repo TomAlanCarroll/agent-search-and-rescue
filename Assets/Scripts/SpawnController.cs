@@ -16,9 +16,9 @@ public class SpawnController : MonoBehaviour {
 	
 	public static List<GameObject> rescuedFriendlySoldiers;
 
-	public static int friendlySoldierCount = 0;
+	public static int friendlySoldierCount;
 	
-	public static int foundFriendlySoldierCount = 0;
+	public static int foundFriendlySoldierCount;
 
 	// Constants
 	public const int NUM_DRONES = 10;
@@ -42,12 +42,19 @@ public class SpawnController : MonoBehaviour {
 	// When the searching of the current zone was started
 	private System.DateTime startZoneSearch;
 	
-	public static DroneStrategy droneStrategy;
+	public static DroneStrategy droneStrategy = DroneStrategy.RANDOM;
 	
 	
 	// Use this for initialization
 	void Start () {
-		droneStrategy = DroneStrategy.ZONES;
+		// Reset all static variables so the scene reset will work correctly
+		missingFriendlySoldiers = null;
+		foundFriendlySoldiers = null;
+		rescuedFriendlySoldiers = null;
+		friendlySoldierCount = 0;
+		foundFriendlySoldierCount = 0;
+		zones = null;
+		currentZone = null;
 
 		missingFriendlySoldiers = new List<GameObject>();
 		foundFriendlySoldiers = new List<GameObject>();
